@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+    <title>株式会社グローリット|SERVICE</title>
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/13414a3658.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/brands.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="baseHeader">
+            <div class="menuBar">
+                <p class="logo1">
+                    <img src="images/logo_white.png" alt="">
+                </p>
+
+                <!--humburger-->
+                <div class="navHamburger">
+                    <div class="buttonTrigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="headerNav">
+                        <li><a href="front-page.html">HOME</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <li><a href="company.html">COMPANY</a></li>
+                        <li><a href="vision.html">VISION</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="headerTitle">
+                <h1>SERVICE</h1>
+                <p>事業内容</p>
+                <p class="down"><i class="fa-solid fa-chevron-down fa-bounce"></i></p>
+            </div>
+        
+        </header>
+        <main>
+            <section class="aboutConnectASP">
+                <div class="mainTitle">
+                    <h2 class="slide-bottom">インフルエンサーの力で商品の価値を最大限に</h2>
+                    <h3 class="slide-bottom">ABOUT CONNECT ASP</h3>
+                </div>
+
+                <div class="pBox">
+                    <p class="slide-bottom">
+                        グローリットはインフルエンサーと企業の架け橋として、アフィリエイトプラットフォーム事業をしております。
+                    </p>
+                </div>
+            </section>
+
+            <div class="backgroundContainer">
+                <section class="connectASP">
+                    <div class="connectASPImg">
+                        <img src="images/connectAsp.jpg" alt="">
+                    </div>
+                    <div class="pbox">
+                        <h3>CONNECT ASP</h3>
+                        <p>
+                            現代社会において広告は重要なものです。<br>
+                            グローリットでは広告業界の”成長”を促し、社会の”明るい”未来を見据えて広告を運用していきます。<br>
+                            そして皆さんが笑顔になれる社会を目指しております。
+                        </p>
+                    </div>
+
+                    <div class="button">
+                        <p><a href="https://connect-afili.com">CONNECT Affiliate<i class="fa-solid fa-circle-chevron-right"></i></a></p>
+                    </div>
+                </section>
+
+            </div>
+
+            <section class="baseContact">
+                <h2 class="title contactTitle">CONTACT</h2>
+                <p class="contactp">
+                    当社へのご案内は下記よりお電話、<br>
+                    もしくはお問い合わせフォームよりお気軽にお問い合わせください。
+                </p>
+                <div class="button">
+                <!--
+                    <div class="telButton">
+                        <a href=tel:000-0000-0000>
+                            <p>電話でのお問い合わせ</p>
+                            <p class="telNumber"><i class="fa-solid fa-phone"></i>000-0000-0000</p>
+                            <p class="time">営業時間/00:00~00:00<br>定休日/土曜日・日曜日</p>
+                        </a>
+                    </div>
+                -->
+                    <div class="formButton">
+                            <a href="contact.html"><p>フォームからのお問い合わせ<i class="fa-solid fa-chevron-right"></i></p></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="baseFooter">
+            <p class="footerLogoImg">
+                <img src="images/logo.png" alt="">
+            </p>
+
+            <p class="footerAbout">
+                株式会社グローリット<br>
+                住所
+            </p>
+
+            <nav>
+                <ul class="footerNav">
+                    <li><a href="front-page.html">HOME</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="company.html">COMPANY</a></li>
+                    <li><a href="vision.html">VISION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="copyright">
+                <ul>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">利用規約</a></li>
+                    <li><small>&copy; 株式会社グローリット 2023. All rights reserved.</small></li>
+                </ul>
+            </div>
+            
+        </footer>
+
+        <script>
+            {
+                /*スクロールイベントの設定*/
+                window.addEventListener('scroll',function(){
+                    let scrollValue = document.documentElement.scrollTop;
+                    console.log(scrollValue);
+                    let position = 'center' + -(scrollValue/20) + 'px';
+                    for(i = 0; i < conteClassObject.length ; i++){
+                        conteClassObject[i].style.backgroundPosition = position;
+                    }
+                });
+            }
+        </script>
+
+<script src="js/hamburger.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.fadethis.min.js"></script>
+
+        <script>
+            $(function(){
+                $(window).fadeThis({
+                    speed:1000
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

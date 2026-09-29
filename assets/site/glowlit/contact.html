@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+    <title>株式会社グローリット|CONTACT</title>
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/13414a3658.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/brands.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="baseHeader">
+            <div class="menuBar">
+                <p class="logo1">
+                    <img src="images/logo_white.png" alt="">
+                </p>
+
+                <!--humburger-->
+                <div class="navHamburger">
+                    <div class="buttonTrigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="headerNav">
+                        <li><a href="front-page.html">HOME</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <li><a href="company.html">COMPANY</a></li>
+                        <li><a href="vision.html">VISION</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="headerTitle">
+                <h1>CONTACT</h1>
+                <p>お問い合わせ</p>
+                <p class="down"><i class="fa-solid fa-chevron-down fa-bounce"></i></p>
+            </div>
+        
+        </header>
+        <main>
+            <div class="mainContainer">
+
+                <section class="contactForm">
+                    <h2>お問い合わせフォーム</h2>
+                    <p class="contactp">
+                        お問い合わせはこちらのフォームから気軽にお尋ねください
+                    </p>
+                    
+                    <form>	
+                        <div class="form">
+                            <p class="name formlabel"><span class="must">必須</span><span class="labelTitle">お名前</span></p>
+                            <input type="text" name="name" id="name" placeholder="例）山田 太郎">
+                        </div>
+                        <div class="form">
+                            <p class="mail formlabel"><span class="must">必須</span><span class="labelTitle">メールアドレス</span></p>
+                            <input type="text" name="mail" id="mail" placeholder="例）yamada@sample.com">
+                        </div>
+                        <div class="form">
+                            <p class="title formlabel"><span class="must">必須</span><span class="labelTitle">お問い合わせ表題</span></p>
+                            <input type="text" name="title" id="title">
+                        </div>
+                        <div class="form">
+                            <p class="textarea formlabel"><span class="must">必須</span><span class="labelTitle">お問い合わせ内容</span></p>
+                            <textarea name="message" id="message"  rows="10"></textarea>
+                        </div>
+                        
+                        
+                        <p class="contactp">
+                            お送りいただいた、お名前やメールアドレスは、<br>
+                            こちらの連絡用以外には使用いたしません。
+                        </p>
+                        
+                        <div class="btn">
+                            <input type="submit" value="送信">
+                            <div class="resetbtn">
+                                <input type="reset" value="やり直し">
+                            </div>
+                        </div>
+                            
+                    </form>
+                </section>
+
+                <section class="baseContact">
+                    <h2 class="title contactTitle">CONTACT</h2>
+                    <p class="contactp">
+                        当社へのご案内は下記よりお電話、<br>
+                        もしくはお問い合わせフォームよりお気軽にお問い合わせください。
+                    </p>
+                    <div class="button">
+                    <!--
+                        <div class="telButton">
+                            a href=tel:000-0000-0000>
+                                <p>電話でのお問い合わせ</p>
+                                <p class="telNumber"><i class="fa-solid fa-phone"></i>000-0000-0000</p>
+                                <p class="time">営業時間/00:00~00:00<br>定休日/土曜日・日曜日</p>
+                            </a>
+                        </div>
+                    -->
+                        <div class="formButton">
+                                <a href="contact.html"><p>フォームからのお問い合わせ<i class="fa-solid fa-chevron-right"></i></p></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+
+        <footer class="baseFooter">
+            <p class="footerLogoImg">
+                <img src="images/logo.png" alt="">
+            </p>
+
+            <p>
+                株式会社グローリット<br>
+                住所
+            </p>
+
+            <nav>
+                <ul class="footerNav">
+                    <li><a href="front-page.html">HOME</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="company.html">COMPANY</a></li>
+                    <li><a href="vision.html">VISION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="copyright">
+                <ul>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">利用規約</a></li>
+                    <li><small>&copy; 株式会社グローリット 2023. All rights reserved.</small></li>
+                </ul>
+            </div>
+            
+        </footer>
+
+        <script>
+            {
+                /*スクロールイベントの設定*/
+                window.addEventListener('scroll',function(){
+                    let scrollValue = document.documentElement.scrollTop;
+                    console.log(scrollValue);
+                    let position = 'center' + -(scrollValue/20) + 'px';
+                    for(i = 0; i < conteClassObject.length ; i++){
+                        conteClassObject[i].style.backgroundPosition = position;
+                    }
+                });
+            }
+        </script>
+
+<script src="js/hamburger.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.fadethis.min.js"></script>
+
+        <script>
+            $(function(){
+                $(window).fadeThis({
+                    speed:1000
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
