@@ -1,0 +1,52 @@
+
+<svg width="1440" height="3200" viewBox="0 0 1440 3200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1440" height="3200" fill="#F8F8F8"/>
+<rect width="1440" height="760" fill="#8593AE"/>
+<rect x="720" width="720" height="760" fill="#F4F4F4"/>
+
+<text x="90" y="90" font-size="44" fill="white" font-family="Georgia">Yui Ito</text>
+<text x="90" y="180" font-size="68" fill="#5A4E4D" font-family="Georgia">伝わるデザインと、</text>
+<text x="90" y="270" font-size="68" fill="#5A4E4D" font-family="Georgia">丁寧なコーディングで</text>
+<text x="90" y="360" font-size="68" fill="#5A4E4D" font-family="Georgia">想いをカタチに。</text>
+
+<rect x="90" y="470" rx="30" width="240" height="70" fill="#DDA488"/>
+<text x="140" y="515" font-size="28" fill="white" font-family="Arial">VIEW WORKS →</text>
+
+<rect x="100" y="860" width="1240" height="500" rx="20" fill="white"/>
+<circle cx="300" cy="1110" r="140" fill="#EDEDED"/>
+<text x="520" y="980" font-size="56" fill="#5A4E4D" font-family="Georgia">Profile</text>
+<text x="520" y="1060" font-size="28" fill="#5A4E4D" font-family="Arial">Web Coder / UI Designer</text>
+
+<rect x="100" y="1450" width="1240" height="640" rx="20" fill="white"/>
+<text x="120" y="1540" font-size="56" fill="#5A4E4D" font-family="Georgia">Works</text>
+
+<rect x="120" y="1610" width="260" height="180" fill="#EEE"/>
+<rect x="420" y="1610" width="260" height="180" fill="#EEE"/>
+<rect x="720" y="1610" width="260" height="180" fill="#EEE"/>
+<rect x="1020" y="1610" width="260" height="180" fill="#EEE"/>
+
+<text x="120" y="1830" font-size="24" fill="#5A4E4D">Lifestyle Media Site</text>
+<text x="420" y="1830" font-size="24" fill="#5A4E4D">Dental Clinic Site</text>
+<text x="720" y="1830" font-size="24" fill="#5A4E4D">Cafe Site</text>
+<text x="1020" y="1830" font-size="24" fill="#5A4E4D">Beauty Salon Site</text>
+
+<rect x="100" y="2160" width="1240" height="360" rx="20" fill="#EEF1F5"/>
+<text x="120" y="2250" font-size="56" fill="#5A4E4D" font-family="Georgia">Skill</text>
+
+<circle cx="220" cy="2360" r="48" fill="#FFF"/>
+<circle cx="360" cy="2360" r="48" fill="#FFF"/>
+<circle cx="500" cy="2360" r="48" fill="#FFF"/>
+<circle cx="760" cy="2360" r="48" fill="#FFF"/>
+<circle cx="900" cy="2360" r="48" fill="#FFF"/>
+<circle cx="1040" cy="2360" r="48" fill="#FFF"/>
+
+<rect x="100" y="2600" width="1240" height="420" rx="20" fill="white"/>
+<text x="120" y="2690" font-size="56" fill="#5A4E4D" font-family="Georgia">Contact</text>
+
+<rect x="520" y="2720" width="700" height="70" rx="10" fill="#F5F5F5"/>
+<rect x="520" y="2820" width="700" height="70" rx="10" fill="#F5F5F5"/>
+<rect x="520" y="2920" width="700" height="70" rx="10" fill="#F5F5F5"/>
+
+<rect x="920" y="3030" width="300" height="70" rx="35" fill="#DDA488"/>
+<text x="1030" y="3075" font-size="26" fill="white">送信する</text>
+</svg>

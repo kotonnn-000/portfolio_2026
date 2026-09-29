@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kotone's Portfolio</title>
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+<!-- JS -->
+	<script type="text/javascript" src="./../jQuery/jquery-3.7.1.min.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-txt">
+				<a href="">
+					<h1 class="header-txt__head">Kotone's Portfolio</h1>
+					<p class="header-txt__sub">Web Coder</p>
+				</a>
+			</div>
+			<div class="headerMenu">
+				<nav class="headerMenu-nav">
+					<ul class="headerMenu-lst">
+						<li class="headerMenu-nav__item"><a href="#profile">Profile</a></li>
+						<li class="headerMenu-nav__item"><a href="#work">Work</a></li>
+						<li class="headerMenu-nav__item"><a href="#skill">Skill</a></li>
+						<li class="headerMenu-nav__item"><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="headerMenu-icon"></div>
+			</div>
+		</header>
+        <main>
+            <section class="pageMv">
+				<div class="pageMv-txt">
+					<h2 class="pageMv-txt__head">Works</h2>
+                    <p class="pageMv-txt__head--jp">制作実績</p>
+                    <p class="pageMv-txt__sub">これまでに制作したWebサイト・作品などの実績をご紹介します。</p>
+				</div>
+				<img src="assets/images/mv.png" class="mv-img" alt="メインビジュアル">
+			</section>
+
+            <section class="pageWorks">
+                <ul class="pageWorks-cat">
+                    <li class="pageWorks-cat__item is-active" data-filter="all">ALL</li>
+                    <li class="pageWorks-cat__item" data-filter="cording">Cording</li>
+                    <li class="pageWorks-cat__item" data-filter="sesign">Design</li>
+                    <li class="pageWorks-cat__item" data-filter="movie">Movie</li>
+                </ul>
+                <ul class="pageWorks__lst">
+                    <li class="pageWorks__item is-show" data-category="">
+						<a href="">
+							<img src="" alt="" class="pageWorks__img">
+							<div class="pageWorks__detail">
+								<h3 class="pageWorks__head">サンプル1</h3>
+								<p class="pageWorks__tool">HTML CSS JS</p>
+							</div>
+						</a>
+					</li>
+					<li class="pageWorks__item is-show" data-category="">
+						<a href="">
+							<img src="" alt="" class="pageWorks__img">
+							<div class="pageWorks__detail">
+								<h3 class="pageWorks__head">サンプル1</h3>
+								<p class="pageWorks__tool">HTML CSS JS</p>
+							</div>
+						</a>
+					</li>
+					<li class="pageWorks__item is-show" data-category="">
+						<a href="">
+							<img src="" alt="" class="pageWorks__img">
+							<div class="pageWorks__detail">
+								<h3 class="pageWorks__head">サンプル1</h3>
+								<p class="pageWorks__tool">HTML CSS JS</p>
+							</div>
+						</a>
+					</li>
+					<li class="pageWorks__item is-show" data-category="">
+						<a href="">
+							<img src="" alt="" class="pageWorks__img">
+							<div class="pageWorks__detail">
+								<h3 class="pageWorks__head">サンプル1</h3>
+								<p class="pageWorks__tool">HTML CSS JS</p>
+							</div>
+						</a>
+					</li>
+					<li class="pageWorks__item is-show" data-category="">
+						<a href="">
+							<img src="" alt="" class="pageWorks__img">
+							<div class="pageWorks__detail">
+								<h3 class="pageWorks__head">サンプル1</h3>
+								<p class="pageWorks__tool">HTML CSS JS</p>
+							</div>
+						</a>
+					</li>
+					<li class="pageWorks__item is-show" data-category="">
+						<a href="">
+							<img src="" alt="" class="pageWorks__img">
+							<div class="pageWorks__detail">
+								<h3 class="pageWorks__head">サンプル1</h3>
+								<p class="pageWorks__tool">HTML CSS JS</p>
+							</div>
+						</a>
+					</li>
+					<li class="pageWorks__item is-show" data-category="">
+						<a href="">
+							<img src="" alt="" class="pageWorks__img">
+							<div class="pageWorks__detail">
+								<h3 class="pageWorks__head">サンプル1</h3>
+								<p class="pageWorks__tool">HTML CSS JS</p>
+							</div>
+						</a>
+					</li>
+					<li class="pageWorks__item is-show" data-category="">
+						<a href="">
+							<img src="" alt="" class="pageWorks__img">
+							<div class="pageWorks__detail">
+								<h3 class="pageWorks__head">サンプル1</h3>
+								<p class="pageWorks__tool">HTML CSS JS</p>
+							</div>
+						</a>
+					</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+			<div class="totop-btn">
+				<p class="totop-btn__inner"><a href="">TOP</a></p>
+			</div>
+			<div class="copyright">
+                <p><small>&copy; Sho's Portfolio 2024.</small></p>
+            </div>
+		</footer>
+
+		<script>
+			$('.js-menuOpen').click(function(){
+				$(".header-menu").addClass("header-menu--active");
+				$('html, body').css('overflow', 'hidden');
+			});
+			$('.js-menuClose').click(function(){
+				$(".header-menu").removeClass("header-menu--active");
+				$('html, body').removeAttr('style');
+			});
+		</script>
+	</body>
+</html>

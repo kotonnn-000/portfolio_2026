@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kotone's Portfolio</title>
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+		<!-- JS -->
+	<script type="text/javascript" src="./assets/js/jQuery/jquery-3.7.1.min.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-txt">
+				<a href="" class="header-txt__lnk">
+					<h1 class="header-txt__head">Kotone's Portfolio</h1>
+					<p class="header-txt__sub">Web Coder</p>
+				</a>
+			</div>
+			<div class="headerMenu">
+				<nav class="headerMenu-nav">
+					<ul class="headerMenu-lst">
+						<li class="headerMenu-nav__item"><a href="#profile" class="headerMenu-nav__lnk">Profile</a></li>
+						<li class="headerMenu-nav__item"><a href="#works" class="headerMenu-nav__lnk">Works</a></li>
+						<li class="headerMenu-nav__item"><a href="#skill" class="headerMenu-nav__lnk">Skill</a></li>
+						<li class="headerMenu-nav__item"><a href="#contact" class="headerMenu-nav__lnk">Contact</a></li>
+					</ul>
+					<button class="headerMenu-nav__close js-menuClose">
+						<span class="close-line close-line1"></span>
+						<span class="close-line close-line2"></span>
+					</button>
+				</nav>
+				<button class="hamburger js-menuOpen">
+					<span class="hamburger-line hamburger-line1"></span>
+					<span class="hamburger-line hamburger-line2"></span>
+					<span class="hamburger-line hamburger-line3"></span>
+				</button>
+			</div>
+		</header>
+		<main>
+			<section class="mv">
+				<div class="mv-txt">
+					<h2 class="mv-txt__head">伝わるデザインと、<br>丁寧なコーディングで<br>想いをカタチに。</h2>
+				</div>
+				<p class="mv-btn"><a href="#works" class="mv-btn__lnk">VIEW WORKS →</a></p>
+				<img src="assets/images/mv.png" class="mv-img" alt="メインビジュアル">
+				<p class="mv-scrollbar">SCROLL</p>
+			</section>
+
+			<section class="profile" id="profile">
+				<div class="content-title">
+					<h2 class="content-title__head">PROFILE</h2>
+				</div>
+				<div class="profile-detail">
+					<img src="assets/images/myimg.jpg" class="profile-detail__img" alt="Kotoneの画像">
+					<div class="profile-detail__txt">
+						<div class="profile-detail__txtInner">
+							<div class="profile-detail__name">
+								<h2 class="profile-detail__name-jp">林 詩音</h2>
+								<p class="profile-detail__name-en">Kotone Hayashi</p>
+							</div>
+							<h3 class="profile-detail__job">Web Coder</h3>
+						</div>
+						<div class="profile-career--pc">
+							<p class="profile-career__txt">東京都在住。2024年にデジタルハリウッド大学を卒業。</p>
+							<p class="profile-career__txt">大学在学中からWebデザイン・コーディングを学び、約2年間フリーランスとしてWeb制作案件を経験。<br>
+								卒業後はWeb制作会社にてフロントエンドエンジニアとして勤務し、サイト制作や運用業務に携わる。
+							</p>
+							<p class="profile-career__txt">現在は、これまでの経験を活かし、フリーランスのWebコーダーとして活動しています。<br>
+								HTML / CSS / JavaScriptを用いたコーディングを中心に対応しており、デザインの再現性と保守性を意識した実装を心がけています。
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="profile-career">
+					<p class="profile-career__txt">東京都在住。2024年にデジタルハリウッド大学を卒業。</p>
+					<p class="profile-career__txt">大学在学中からWebデザイン・コーディングを学び、約2年間フリーランスとしてWeb制作案件を経験。<br>
+						卒業後はWeb制作会社にてフロントエンドエンジニアとして勤務し、サイト制作や運用業務に携わる。
+					</p>
+					<p class="profile-career__txt">現在は、これまでの経験を活かし、フリーランスのWebコーダーとして活動しています。<br>
+						HTML / CSS / JavaScriptを用いたコーディングを中心に対応しており、デザインの再現性と保守性を意識した実装を心がけています。
+					</p>
+				</div>
+			</section>
+
+			<section class="works" id="works">
+				<div class="content-title">
+					<h2 class="content-title__head">WORKS</h2>
+				</div>
+				<ul class="worksLst">
+					<li class="worksLst__item">
+						<a href="https://kotonnn-000.github.io/strawberryweek/" class="worksLst__lnk">
+							<img src="./assets/images/strawberryweek.png" alt="strawberryweek" class="worksLst__img">
+							<div class="worksLst__detail">
+								<h3 class="worksLst__head">Strawberry Week</h3>
+								<p class="worksLst__tool">#卒業制作 #最優秀賞 #Sass #JS</p>
+							</div>
+						</a>
+					</li>
+					<li class="worksLst__item">
+						<a href="https://glowlit.jp/" class="worksLst__lnk">
+							<img src="./assets/images/glowlit.png" alt="GLOWLIT" class="worksLst__img">
+							<div class="worksLst__detail">
+								<h3 class="worksLst__head">GLOWLIT</h3>
+								<p class="worksLst__tool">#初案件 #2023 #Wordpress #カスタム作成</p>
+							</div>
+						</a>
+					</li>
+					<li class="worksLst__item">
+						<a href="https://hanshin-transport.com/" class="worksLst__lnk">
+							<img src="./assets/images/hanshintransport.png" alt="阪神トランスポート" class="worksLst__img">
+							<div class="worksLst__detail">
+								<h3 class="worksLst__head">阪神トランスポート</h3>
+								<p class="worksLst__tool">#案件 #2024 #HTML</p>
+							</div>
+						</a>
+					</li>
+					<li class="worksLst__item">
+						<a href="./assets/site/italian/TopPage.html" class="worksLst__lnk">
+							<img src="./assets/images/Italian.png" alt="FANTASTICO540" class="worksLst__img">
+							<div class="worksLst__detail">
+								<h3 class="worksLst__head">FANTASTICO540</h3>
+								<p class="worksLst__tool">#課題 #架空サイト #HTML #Sass</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<p class="works-btn"><a href="./works.html" class="works-btn__lnk">VIEW ALL WORKS →</a></p>
+			</section>
+
+			<section class="skill" id="skill">
+				<div class="content-title">
+					<h2 class="content-title__head">SKILL</h2>
+				</div>
+				<ul class="skillLst">
+					<li class="skillLst__item">
+						<div>
+							<h3 class="skillLst__head">言語</h3>
+							<ul class="skillLst-sub__lst">
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/html.png" alt="HTML" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">HTML</p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/css.png" alt="CSS" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">CSS</p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/sass.png" alt="Sass" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">Sass</p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/javascript.png" alt="JavaScript" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">JavaScript</p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/jquery.png" alt="JQuery" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">JQuery</p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/php.png" alt="PHP" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">PHP</p>
+								</li>
+							</ul>
+							<p class="skill-scrollbar">SCROLL</p>
+						</div>
+					</li>
+					<li class="skillLst__item">
+						<div>
+							<h3 class="skillLst__head">使用ツール</h3>
+							<ul class="skillLst-sub__lst">
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/vscode.png" alt="VScode" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">VScode</p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/figma.png" alt="Figma" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">Figma</p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/ai.png" alt="AdobeIllustrator" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">Illustrator</p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/ps.png" alt="AdobePhotoshop" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">Photoshop</p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/local.png" alt="local" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">Local</p>
+								</li>
+							</ul>
+							<p class="skill-scrollbar">SCROLL</p>
+						</div>
+					</li>
+					<li class="skillLst__item">
+						<div>
+							<h3 class="skillLst__head">その他</h3>
+							<ul class="skillLst-sub__lst">
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/responsive.png" alt="レスポンシブ対応" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">レスポンシブ対応<br><span class="skillLst-sub__txt--size">（PC・スマホ）</span></p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/wordpress.png" alt="WordPress" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">WordPress<br><span class="skillLst-sub__txt--size">（カスタム作成）</span></p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/ftp.png" alt="FTP" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">FTP接続</p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/ae.png" alt="AdobeAftereffect" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">Aftereffect<br><span class="skillLst-sub__txt--size">軽い動画作成・編集</span></p>
+								</li>
+								<li class="skillLst-sub__item">
+									<div class="skillLst-sub__iconBox"><img src="./assets/images/adobe.png" alt="Adobe" class="skillLst-sub__icon"></div>
+									<p class="skillLst-sub__txt">その他Adobeソフト</span></p>
+								</li>
+							</ul>
+							<p class="skill-scrollbar">SCROLL</p>
+						</div>
+					</li>
+				</ul>
+				<p class="skill-scrollbar--pc">SCROLL</p>
+			</section>
+
+			<section class="contact" id="contact">
+				<div class="content-title">
+					<h2 class="content-title__head">CONTACT</h2>
+				</div>
+				<p class="contact-txt">お仕事のご依頼・ご相談など、<span class="contact-txt__br">お気軽にお問い合わせください。</span></p>
+				<form class="contact-form" action="https://formspree.io/f/あなたのフォームID" method="POST">
+					<div class="contact-form__box">
+						<label for="name" class="contact-form__label">お名前<span class="contact-form__label--bar">|</span><span class="contact-form__label--en">Name</span><span class="contact-form__required">※必須</span></label>
+						<input
+						type="text"
+						id="name"
+						name="name"
+						class="contact-form__input"
+						placeholder="お名前を入力してください"
+						required
+						>
+					</div>
+
+					<div class="contact-form__box">
+						<label for="email" class="contact-form__label">メールアドレス<span class="contact-form__label--bar">|</span><span class="contact-form__label--en">Email</span><span class="contact-form__required">※必須</span>
+						</label>
+						<input
+						type="email"
+						id="email"
+						name="email"
+						class="contact-form__input"
+						placeholder="sample@example.com"
+						required
+						>
+					</div>
+
+					<div class="contact-form__box">
+						<label for="message" class="contact-form__label">お問い合わせ内容<span class="contact-form__label--bar">|</span><span class="contact-form__label--en">Message</span><span class="contact-form__required">※必須</span>
+						</label>
+						<textarea
+						id="message"
+						name="message"
+						class="contact-form__textarea"
+						rows="8"
+						placeholder="お問い合わせ内容をご入力ください"
+						required
+						></textarea>
+					</div>
+
+					<button type="submit" class="contact-form__button">SEND</button>
+				</form>
+			</section>
+		</main>
+		<footer class="footer">
+			<p class="totop-btn js-pageTop">TOP</p>
+			<div class="copyright">
+                <p class="copyright-txt"><small>&copy; Kotone's Portfolio 2026.</small></p>
+            </div>
+		</footer>
+
+
+		<script>
+			$('.js-menuOpen').click(function(){
+				$(".headerMenu-nav").addClass("headerMenu--active");
+				$('html, body').css('overflow', 'hidden');
+			});
+			$('.js-menuClose').click(function(){
+				$(".headerMenu-nav").removeClass("headerMenu--active");
+				$('html, body').removeAttr('style');
+			});
+			$(function() {
+				$('.js-pageTop').on('click', function() {
+					$('html, body').animate(
+					{
+						scrollTop: 0
+					},
+					500
+					);
+				});
+			});
+		</script>
+	</body>
+</html>
