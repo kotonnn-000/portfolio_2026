@@ -1,0 +1,517 @@
+/*Home*/
+
+/*Home Info*/
+.homeInfo{
+    width: 70vw;
+    margin: 0 auto;
+    padding-top: 60px;
+    margin-bottom: 140px;
+    position: relative;
+    z-index: 10;
+
+    .contentTitle_center{
+
+        h3{
+            text-align: center;
+            color: #FF6665;
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        h4{
+            text-align: center;
+            color: #FFB4B8;
+            font-family: "Poppins", serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: -12px;
+        }
+    }
+
+    .infoContent{
+        display: flex;
+        justify-content: center;
+        z-index: 100;
+        text-align: center;
+        margin-top: 30px;
+
+        .infoContentInner{
+            width: 70vw;
+            max-width: 600px;
+            min-width: 300px;
+            margin: 0 auto;
+            aspect-ratio: 15 / 4;
+            border-radius: 15px;
+            background: #E0E0E0;
+
+            ul{
+                margin: 0 auto;
+                padding: 20px 0;
+                width: 90%;
+                min-width: 280px;
+
+                li{
+                    width: 100%;
+                    list-style: none;
+                    color: #111;
+                    font-family: "Sawarabi Mincho", serif;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding-bottom: 5px;
+                    border-bottom: solid 1px #111;
+                    text-align: left;
+
+                    .infoDate{
+                        margin-left: 10px;
+                        margin-right: 20px;
+                    }
+                }
+                
+                li+li{
+                    margin-top: 17px;
+                }
+            }
+        }
+    }
+}
+
+
+/*Home Message*/
+.homeMessage{
+    padding-top: 110px;
+    width: 80vw;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 10;
+
+
+    .contentTitle_left{
+        width: 100%;
+        text-align: left;
+        border-bottom: #E0E0E0 1px solid;
+        margin-bottom: 40px;
+
+        h3{
+            color: #FF6665;
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        h4{
+            color: #FFB4B8;
+            font-family: "Poppins", serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-left: 35px;
+            margin-top: -12px;
+        }
+    }
+
+    .messageContent{
+        max-width: 700px;
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 40px;
+
+        h5{
+            color: #111;
+            text-align: center;
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 60px;
+
+            @media only screen and (max-width: 850px){
+                width: 100%;
+                margin: auto;
+                margin-bottom: 60px;
+            }
+        }
+
+        p{
+            color: #111;
+            font-family: "Sawarabi Mincho", serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 185.714% */
+            margin-bottom: 30px;
+            z-index: 100;
+        }
+    }
+
+    .contentButton{
+
+        .button{
+            width: 130px;
+            height: 50px;
+            margin: auto;
+            border: 1px solid #BF6B6B;
+            display: grid;
+            place-items: center;
+            margin: auto;
+            color: #BF6B6B;
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 20px;
+            font-style: normal;
+            box-sizing: border-box;
+            text-decoration: none;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .button:hover{
+            background-color: #BF6B6B;
+            color: #fffcfc;
+        }
+    }
+}
+
+
+/*Home Text Book*/
+
+
+.textbookcontainer{
+    width: 100vw;
+    background-color: rgba(224, 224, 224, 0.20);
+    border-top: solid 1px #FF6665;
+    border-bottom: solid 1px #FF6665;
+}
+
+.hometextbook{
+    padding-top: 110px;
+    width: 80vw;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    position: relative;
+
+
+    @media only screen and (max-width: 850px){
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .contentTitle_left{
+        width: 100%;
+        text-align: left;
+        border-bottom: #E0E0E0 1px solid;
+        margin-bottom: 40px;
+
+        h3{
+            color: #FF6665;
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        h4{
+            color: #FFB4B8;
+            font-family: "Poppins", serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-left: 4px;
+            margin-top: -12px;
+        }
+    }
+
+
+    .homeTextbookContent{
+        max-width: 700px;
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+
+        .contentPbox{
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 40px;
+            
+
+            h5{
+                color: #111;
+                text-align: center;
+                font-family: "M PLUS Rounded 1c", serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 60px;
+
+                @media only screen and (max-width: 850px){
+                    width: 100%;
+                    margin: auto;
+                    margin-bottom: 60px;
+                }
+            }
+
+            p{
+                color: #111;
+                font-family: "Sawarabi Mincho", serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; /* 185.714% */
+                margin-bottom: 15px;
+                z-index: 100;
+                text-align: left;
+            }
+        }
+    }
+
+    .contentButton{
+        margin-top: 20px;
+
+        .button{
+            width: 180px;
+            height: 50px;
+            border: 1px solid #BF6B6B;
+            display: grid;
+            place-items: center;
+            margin: auto;
+            color: #BF6B6B;
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 20px;
+            font-style: normal;
+            box-sizing: border-box;
+            text-decoration: none;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .button:hover{
+            background-color: #BF6B6B;
+            color: #fffcfc;
+        }
+    }
+}
+
+.dashedline{
+    border-bottom: dashed 1px #ff6665;
+}
+
+.homeMyTextbook{
+    padding-top: 110px;
+    width: 80vw;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    position: relative;
+
+
+    @media only screen and (max-width: 850px){
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .contentTitle_left{
+        text-align: left;
+        border-bottom: #E0E0E0 1px solid;
+        margin-bottom: 40px;
+
+        h3{
+            color: #FF6665;
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        h4{
+            color: #FFB4B8;
+            font-family: "Poppins", serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-left: 10px;
+            margin-top: -12px;
+        }
+    }
+
+
+    .homeMyTextbookContent{
+        max-width: 700px;
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+
+        .contentPbox{
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 40px;
+
+            h5{
+                color: #111;
+                text-align: center;
+                font-family: "M PLUS Rounded 1c", serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 60px;
+
+                @media only screen and (max-width: 850px){
+                    width: 100%;
+                    margin: auto;
+                    margin-bottom: 60px;
+                }
+            }
+
+            p{
+                color: #111;
+                font-family: "Sawarabi Mincho", serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; /* 185.714% */
+                margin-bottom: 15px;
+                z-index: 100;
+                text-align: left;
+            }
+        }
+    }
+
+    .contentButton{
+        margin-top: 20px;
+
+        .button{
+            width: 180px;
+            height: 50px;
+            margin: auto;
+            border: 1px solid #BF6B6B;
+            display: grid;
+            place-items: center;
+            margin: auto;
+            color: #BF6B6B;
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 20px;
+            font-style: normal;
+            box-sizing: border-box;
+            text-decoration: none;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .button:hover{
+            background-color: #BF6B6B;
+            color: #fffcfc;
+        }
+    }
+}
+
+
+/*Home Lounge*/
+.homeLounge{
+    padding-top: 110px;
+    width: 80vw;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    position: relative;
+    
+
+    .contentTitle_left{
+        width: 100%;
+        text-align: left;
+        border-bottom: #E0E0E0 1px solid;
+        margin-bottom: 40px;
+
+        h3{
+            color: #FF6665;
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        h4{
+            color: #FFB4B8;
+            font-family: "Poppins", serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-left: 25px;
+            margin-top: -12px;
+        }
+    }
+
+    .homeLoungeContent{
+        max-width: 700px;
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        
+        h5{
+            color: #111;
+            text-align: center;
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 60px;
+
+            @media only screen and (max-width: 850px){
+                width: 100%;
+                margin: auto;
+                margin-bottom: 60px;
+            }
+        }
+
+        p{
+            color: #111;
+            font-family: "Sawarabi Mincho", serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 185.714% */
+            margin-bottom: 20px;
+        }
+    }
+    
+
+    .contentButton{
+
+        .button{
+            width: 150px;
+            height: 50px;
+            margin: auto;
+            border: 1px solid #BF6B6B;
+            display: grid;
+            place-items: center;
+            margin: auto;
+            color: #BF6B6B;
+            font-family: "M PLUS Rounded 1c", serif;
+            font-size: 20px;
+            font-style: normal;
+            box-sizing: border-box;
+            text-decoration: none;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .button:hover{
+            background-color: #BF6B6B;
+            color: #fffcfc;
+        }
+    }
+}
