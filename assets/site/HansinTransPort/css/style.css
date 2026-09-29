@@ -1,0 +1,2061 @@
+/*frontpage_header*/
+.frontpage_header {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+.frontpage_header .headerMenu {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  background-color: rgba(0, 53, 82, 0.1490196078);
+  padding-top: 12px;
+}
+.frontpage_header .headerMenu h1 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-left: 30px;
+}
+.frontpage_header .headerMenu h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+@media only screen and (max-width: 450px) {
+  .frontpage_header .headerMenu h1 {
+    margin-top: 23px;
+    font-size: 18px;
+  }
+}
+.frontpage_header .headerMenu .headernav {
+  display: flex;
+  z-index: 20;
+  margin-right: 30px;
+}
+.frontpage_header .headerMenu .headernav li {
+  padding-top: 15px;
+  list-style: none;
+}
+.frontpage_header .headerMenu .headernav li a {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 16px;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+.frontpage_header .headerMenu .headernav li:hover {
+  background-color: #efd700;
+}
+.frontpage_header .headerMenu .headernav .headerMenu_contact {
+  background-color: #0094e5;
+  padding: 15px 0;
+}
+@media only screen and (max-width: 850px) {
+  .frontpage_header .headerMenu .headernav {
+    display: none;
+    position: absolute;
+    top: 84px;
+    right: 0;
+    background-color: rgba(0, 53, 82, 0.1490196078);
+  }
+  .frontpage_header .headerMenu .headernav li {
+    text-align: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #fff;
+  }
+  .frontpage_header .headerMenu .headernav li a {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    border-right: none;
+  }
+}
+.frontpage_header .headerMenu .open {
+  display: block;
+}
+.frontpage_header .headerMenu .hambuger {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  right: 0;
+  transition: all 0.4s;
+  z-index: 30;
+  background-color: #0094e5;
+  margin: 10px;
+}
+.frontpage_header .headerMenu .hambuger span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.frontpage_header .headerMenu .hambuger span:first-of-type {
+  top: 10px;
+}
+.frontpage_header .headerMenu .hambuger span:nth-of-type(2) {
+  top: 25px;
+}
+.frontpage_header .headerMenu .hambuger span:last-of-type {
+  top: 40px;
+}
+@media only screen and (max-width: 850px) {
+  .frontpage_header .headerMenu .hambuger {
+    display: block;
+    position: absolute;
+  }
+}
+.frontpage_header .headerMenu .active span:first-of-type {
+  top: 25px;
+  transform: rotate(45deg);
+}
+.frontpage_header .headerMenu .active span:nth-of-type(2) {
+  opacity: 0;
+}
+.frontpage_header .headerMenu .active span:last-of-type {
+  top: 25px;
+  transform: rotate(-45deg);
+}
+.frontpage_header h2 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 48px;
+  letter-spacing: 0.5em;
+  line-height: 70px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: 65%;
+  left: 5%;
+}
+@media only screen and (max-width: 650px) {
+  .frontpage_header h2 {
+    font-size: 32px;
+  }
+}
+.frontpage_header .mainVisual {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.frontpage_header .mainVisual video {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*header*/
+.page_header {
+  width: 100vw;
+  margin: 0 auto;
+  position: relative;
+}
+.page_header .headerMenu {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  background-color: rgba(0, 53, 82, 0.1490196078);
+  padding-top: 12px;
+}
+.page_header .headerMenu h1 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-left: 30px;
+}
+.page_header .headerMenu h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+@media only screen and (max-width: 450px) {
+  .page_header .headerMenu h1 {
+    margin-top: 23px;
+    font-size: 18px;
+  }
+}
+.page_header .headerMenu .headernav {
+  display: flex;
+  z-index: 20;
+  margin-right: 30px;
+}
+.page_header .headerMenu .headernav li {
+  padding-top: 15px;
+  list-style: none;
+}
+.page_header .headerMenu .headernav li a {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 16px;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+.page_header .headerMenu .headernav li:hover {
+  background-color: #efd700;
+}
+.page_header .headerMenu .headernav .headerMenu_contact {
+  background-color: #0094e5;
+  padding: 15px 0;
+}
+@media only screen and (max-width: 850px) {
+  .page_header .headerMenu .headernav {
+    display: none;
+    position: absolute;
+    top: 84px;
+    right: 0;
+    background-color: rgba(0, 53, 82, 0.1490196078);
+  }
+  .page_header .headerMenu .headernav li {
+    text-align: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #fff;
+  }
+  .page_header .headerMenu .headernav li a {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    border-right: none;
+  }
+}
+.page_header .headerMenu .open {
+  display: block;
+}
+.page_header .headerMenu .hambuger {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  right: 0;
+  transition: all 0.4s;
+  z-index: 30;
+  background-color: #0094e5;
+  margin: 10px;
+}
+.page_header .headerMenu .hambuger span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.page_header .headerMenu .hambuger span:first-of-type {
+  top: 10px;
+}
+.page_header .headerMenu .hambuger span:nth-of-type(2) {
+  top: 25px;
+}
+.page_header .headerMenu .hambuger span:last-of-type {
+  top: 40px;
+}
+@media only screen and (max-width: 850px) {
+  .page_header .headerMenu .hambuger {
+    display: block;
+    position: absolute;
+  }
+}
+.page_header .headerMenu .active span:first-of-type {
+  top: 25px;
+  transform: rotate(45deg);
+}
+.page_header .headerMenu .active span:nth-of-type(2) {
+  opacity: 0;
+}
+.page_header .headerMenu .active span:last-of-type {
+  top: 25px;
+  transform: rotate(-45deg);
+}
+
+/*footer*/
+.footer {
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+.footer .footerMenu {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0;
+  border-bottom: 1px solid #000;
+}
+.footer .footerMenu h5 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+.footer .footerMenu ul {
+  display: flex;
+  margin-top: 12px;
+}
+.footer .footerMenu ul a {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 13px;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  border-right: 1px solid #000;
+}
+.footer .footerMenu ul .headerMenu_contact {
+  background-color: #0094e5;
+  color: #fff;
+}
+.footer .footerMenu ul a:hover {
+  background-color: #efd700;
+}
+@media only screen and (max-width: 800px) {
+  .footer .footerMenu ul {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .footer .footerMenu {
+    display: block;
+    text-align: center;
+  }
+}
+.footer .footer_info {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  padding: 35px 0;
+  border-bottom: 1px solid #000;
+}
+@media only screen and (max-width: 940px) {
+  .footer .footer_info {
+    display: block;
+  }
+}
+.footer .footer_info .access {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+.footer .footer_info .access h6 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.footer .footer_info .access p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 13px;
+  color: #000;
+}
+.footer .footer_info .access .osaka {
+  margin-right: 20px;
+}
+@media only screen and (max-width: 940px) {
+  .footer .footer_info .access {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  .footer .footer_info .access .osaka, .footer .footer_info .access .kobe {
+    width: 45%;
+  }
+}
+.footer .footer_info .footer_contact {
+  width: 50%;
+  margin: 0 auto;
+}
+.footer .footer_info .footer_contact h6 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+  text-align: left;
+}
+@media only screen and (max-width: 940px) {
+  .footer .footer_info .footer_contact h6 {
+    font-size: 14px;
+  }
+}
+.footer .footer_info .footer_contact .tel {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  margin: 8px 0;
+  font-weight: 700;
+}
+@media only screen and (max-width: 940px) {
+  .footer .footer_info .footer_contact .tel {
+    font-size: 16px;
+  }
+}
+.footer .footer_info .footer_contact .tel a {
+  text-decoration: none;
+  color: #0094e5;
+}
+.footer .footer_info .footer_contact .tel a:hover {
+  color: #efd700;
+}
+.footer .footer_info .footer_contact .time {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  text-align: left;
+}
+@media only screen and (max-width: 940px) {
+  .footer .footer_info .footer_contact .time {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .footer .footer_info .footer_contact {
+    width: 250px;
+  }
+}
+.footer .copyright {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+.footer .copyright p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 12px;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+}
+.footer .copyright .privacypolicy {
+  margin-bottom: 20px;
+}
+.footer .copyright .privacypolicy a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main_pbox {
+  text-align: center;
+  margin: 100px auto;
+}
+.main_pbox .firstline {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  line-height: 40px;
+  height: auto;
+}
+.main_pbox .firstline .black {
+  font-size: 34px;
+}
+.main_pbox .firstline .blue {
+  font-size: 34px;
+  color: #0094e5;
+}
+@media only screen and (max-width: 980px) {
+  .main_pbox .firstline {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .main_pbox .firstline {
+    font-size: 14px;
+  }
+  .main_pbox .firstline .black {
+    font-size: 24px;
+  }
+  .main_pbox .firstline .blue {
+    font-size: 24px;
+  }
+}
+.main_pbox .front_recruit_button {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-top: 50px;
+}
+.main_pbox .front_recruit_button a {
+  text-decoration: none;
+  color: #000;
+  background-color: #efd700;
+  padding: 15px 30px;
+}
+.main_pbox .front_recruit_button a i {
+  transition: transform 0.3s ease-in-out;
+}
+.main_pbox .front_recruit_button a:hover {
+  background-color: rgba(239, 215, 0, 0.4823529412);
+  color: #9a9a9a;
+}
+.main_pbox .front_recruit_button a:hover i {
+  transform: translateX(20px);
+}
+@media only screen and (max-width: 580px) {
+  .main_pbox .front_recruit_button {
+    font-size: 14px;
+    padding: 15px 10px;
+    letter-spacing: 1px;
+  }
+}
+
+/*about*/
+.about {
+  width: 100vw;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+.about .head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about .head h3 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 55px;
+}
+@media only screen and (max-width: 580px) {
+  .about .head h3 {
+    font-size: 26px;
+  }
+}
+.about .head p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 580px) {
+  .about .head p {
+    font-size: 14px;
+  }
+}
+.about .about_flex {
+  height: auto;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+@media only screen and (max-width: 580px) {
+  .about .about_flex {
+    display: block;
+  }
+}
+.about .about_flex .about_flex_p {
+  width: 45%;
+  margin: 0 auto;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 1px;
+  align-items: center;
+}
+@media only screen and (max-width: 900px) {
+  .about .about_flex .about_flex_p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .about .about_flex .about_flex_p {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+.about .about_flex .about_flex_img {
+  width: 50%;
+  margin: 0 auto;
+}
+.about .about_flex .about_flex_img img {
+  width: 100%;
+}
+@media only screen and (max-width: 580px) {
+  .about .about_flex .about_flex_img {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/*corporate_indentity*/
+.corporateidentity {
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+  background: url(../images/identity_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.corporateidentity .corporateidentity_container {
+  background-color: #fff;
+  width: 85vw;
+  height: 80%;
+  margin: 0 auto;
+  border-radius: 35px;
+}
+.corporateidentity .corporateidentity_container .head {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 30px;
+}
+.corporateidentity .corporateidentity_container .head h3 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 55px;
+}
+@media only screen and (max-width: 580px) {
+  .corporateidentity .corporateidentity_container .head h3 {
+    font-size: 26px;
+  }
+}
+.corporateidentity .corporateidentity_container .head p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 580px) {
+  .corporateidentity .corporateidentity_container .head p {
+    font-size: 14px;
+  }
+}
+.corporateidentity .corporateidentity_container .identity {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  margin-top: 20px;
+}
+.corporateidentity .corporateidentity_container .identity .identity_contants {
+  display: flex;
+  margin: 40px 0;
+}
+@media only screen and (max-width: 740px) {
+  .corporateidentity .corporateidentity_container .identity .identity_contants {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.corporateidentity .corporateidentity_container .identity .identity_contants h4 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+}
+.corporateidentity .corporateidentity_container .identity .identity_contants h4 .small {
+  font-size: 32px;
+}
+.corporateidentity .corporateidentity_container .identity .identity_contants h4 .big {
+  font-size: 44px;
+}
+@media only screen and (max-width: 910px) {
+  .corporateidentity .corporateidentity_container .identity .identity_contants h4 {
+    font-size: 28px;
+  }
+  .corporateidentity .corporateidentity_container .identity .identity_contants h4 .small {
+    font-size: 22px;
+  }
+  .corporateidentity .corporateidentity_container .identity .identity_contants h4 .big {
+    font-size: 34px;
+  }
+}
+.corporateidentity .corporateidentity_container .identity .identity_contants .identity_line {
+  width: 80px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.6509803922);
+  transform: rotate(-45deg) translateX(-25px) translateY(35px);
+}
+@media only screen and (max-width: 740px) {
+  .corporateidentity .corporateidentity_container .identity .identity_contants .identity_line {
+    display: none;
+  }
+}
+.corporateidentity .corporateidentity_container .identity .identity_contants .identity_p {
+  width: 60%;
+  margin-top: 40px;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+}
+@media only screen and (max-width: 740px) {
+  .corporateidentity .corporateidentity_container .identity .identity_contants .identity_p {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+.corporateidentity .corporateidentity_container .identity .identity_one .color {
+  font-size: 44px;
+  color: #0094e5;
+}
+@media only screen and (max-width: 910px) {
+  .corporateidentity .corporateidentity_container .identity .identity_one .color {
+    font-size: 34px;
+  }
+}
+.corporateidentity .corporateidentity_container .identity .identity_two .color {
+  font-size: 44px;
+  color: #e50000;
+}
+@media only screen and (max-width: 910px) {
+  .corporateidentity .corporateidentity_container .identity .identity_two .color {
+    font-size: 34px;
+  }
+}
+.corporateidentity .corporateidentity_container .identity .identity_three .color {
+  font-size: 44px;
+  color: #009e1a;
+}
+@media only screen and (max-width: 910px) {
+  .corporateidentity .corporateidentity_container .identity .identity_three .color {
+    font-size: 34px;
+  }
+}
+
+/*service*/
+.service {
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #f1f5f7;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.service .head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.service .head h3 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 55px;
+}
+@media only screen and (max-width: 580px) {
+  .service .head h3 {
+    font-size: 26px;
+  }
+}
+.service .head p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 580px) {
+  .service .head p {
+    font-size: 14px;
+  }
+}
+.service .contentsBlock {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 570px) {
+  .service .contentsBlock {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.service .contentsBlock .contentsBlock_discription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 45%;
+  background-color: #fff;
+}
+@media only screen and (max-width: 570px) {
+  .service .contentsBlock .contentsBlock_discription {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+.service .contentsBlock .contentsBlock_discription h4 {
+  width: 85%;
+  color: #000;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #0094e5;
+}
+@media only screen and (max-width: 850px) {
+  .service .contentsBlock .contentsBlock_discription h4 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .service .contentsBlock .contentsBlock_discription h4 {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-top: 20px;
+  }
+}
+.service .contentsBlock .contentsBlock_discription p {
+  width: 85%;
+  color: #000;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+@media only screen and (max-width: 850px) {
+  .service .contentsBlock .contentsBlock_discription p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .service .contentsBlock .contentsBlock_discription p {
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+.service .contentsBlock .contentsBlock_image {
+  width: 55%;
+}
+.service .contentsBlock .contentsBlock_image img {
+  width: 100%;
+}
+@media only screen and (max-width: 570px) {
+  .service .contentsBlock .contentsBlock_image {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.service .contentsBlock_reverse {
+  flex-direction: row-reverse;
+}
+.service .contentsBlock_reverse .contentsBlock_image {
+  text-align: right;
+  margin-left: 0;
+}
+.service .contentsBlock_reverse .contentsBlock_discription {
+  justify-content: center;
+}
+
+.fleet {
+  width: 100vw;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.fleet .head {
+  text-align: center;
+  padding-top: 90px;
+  margin-bottom: 50px;
+}
+.fleet .head h3 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 55px;
+}
+@media only screen and (max-width: 580px) {
+  .fleet .head h3 {
+    font-size: 26px;
+  }
+}
+.fleet .head p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 580px) {
+  .fleet .head p {
+    font-size: 14px;
+  }
+}
+.fleet .pbox {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.fleet .pbox .firstline {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+}
+@media only screen and (max-width: 580px) {
+  .fleet .pbox .firstline {
+    font-size: 16px;
+  }
+}
+.fleet .pbox .secondline {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6274509804);
+}
+@media only screen and (max-width: 580px) {
+  .fleet .pbox .secondline {
+    font-size: 12px;
+  }
+}
+.fleet .fleet_contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.fleet .fleet_contents .fleet_block {
+  width: 30%;
+  min-width: 300px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.fleet .fleet_contents .fleet_block img {
+  width: 100%;
+}
+.fleet .fleet_contents .fleet_block h4 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #21272a;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 580px) {
+  .fleet .fleet_contents .fleet_block h4 {
+    font-size: 14px;
+  }
+}
+.fleet .fleet_contents .fleet_block p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #21272a;
+}
+@media only screen and (max-width: 580px) {
+  .fleet .fleet_contents .fleet_block p {
+    font-size: 14px;
+  }
+}
+
+.news {
+  width: 100vw;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+.news .head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.news .head h3 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 55px;
+}
+@media only screen and (max-width: 580px) {
+  .news .head h3 {
+    font-size: 26px;
+  }
+}
+.news .head p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 580px) {
+  .news .head p {
+    font-size: 14px;
+  }
+}
+.news .news_container {
+  width: 80%;
+  margin: 0 auto;
+}
+.news .news_container .news_table tr {
+  border-bottom: 1px solid #999;
+}
+.news .news_container .news_table tr .date {
+  width: 20%;
+  padding-left: 1em;
+}
+@media only screen and (max-width: 470px) {
+  .news .news_container .news_table tr .date {
+    padding-left: 0;
+  }
+}
+.news .news_container .news_table tr .detail {
+  padding-left: 1em;
+}
+.news .news_container .news_table tr .date, .news .news_container .news_table tr .detail {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  color: #21272a;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media only screen and (max-width: 850px) {
+  .news .news_container .news_table tr .date, .news .news_container .news_table tr .detail {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .news .news_container .news_table tr .date, .news .news_container .news_table tr .detail {
+    font-size: 12px;
+  }
+}
+.news .news_container .news_table .news_last {
+  border-bottom: none;
+}
+
+.overview_bg {
+  width: 100vw;
+  height: 1500px;
+  margin: 0 auto;
+  background-image: url(../images/overview_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.overview_head {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+.overview_head h2 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 42px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+}
+@media only screen and (max-width: 650px) {
+  .overview_head h2 {
+    font-size: 28px;
+  }
+}
+
+.overview {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 100px 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 15%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0) 100%);
+}
+.overview .overview_table {
+  width: 80%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 850px) {
+  .overview .overview_table {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.overview .overview_table tr {
+  border-bottom: 1px solid #000;
+}
+.overview .overview_table tr .left {
+  width: 20%;
+  padding-left: 1em;
+}
+@media only screen and (max-width: 470px) {
+  .overview .overview_table tr .left {
+    padding-left: 0;
+  }
+}
+.overview .overview_table tr .right {
+  padding-left: 1em;
+}
+.overview .overview_table tr .right, .overview .overview_table tr .left {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  color: #21272a;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media only screen and (max-width: 850px) {
+  .overview .overview_table tr .right, .overview .overview_table tr .left {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .overview .overview_table tr .right, .overview .overview_table tr .left {
+    font-size: 12px;
+  }
+}
+.overview .overview_table tr .overview_right_list {
+  margin-left: 1em;
+}
+
+.contact_bg {
+  width: 100vw;
+  height: 1740px;
+  margin: 0 auto;
+  background-image: url(../images/contact_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contact_head {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+.contact_head h2 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+}
+@media only screen and (max-width: 650px) {
+  .contact_head h2 {
+    font-size: 28px;
+  }
+}
+
+.contact {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 100px 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 15%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0) 100%);
+}
+.contact .pbox {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 800px) {
+  .contact .pbox {
+    font-size: 16px;
+  }
+}
+.contact .contactform {
+  width: 60%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 800px) {
+  .contact .contactform {
+    width: 85%;
+  }
+}
+.contact .contactform .form_content {
+  margin-bottom: 50px;
+}
+.contact .contactform .form_content dt {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 22px;
+  color: #21272a;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 800px) {
+  .contact .contactform .form_content dt {
+    font-size: 14px;
+  }
+}
+.contact .contactform .form_content .caution {
+  font-size: 0.5em;
+  vertical-align: top;
+  line-height: normal;
+}
+.contact .contactform .form_content dd {
+  width: 100%;
+  margin: 0 auto;
+}
+.contact .contactform .form_content dd input, .contact .contactform .form_content dd textarea {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 1em 0;
+  line-height: 26px;
+  color: #21272a;
+  width: 100%;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1450980392);
+  border: none;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 800px) {
+  .contact .contactform .form_content dd input, .contact .contactform .form_content dd textarea {
+    font-size: 14px;
+  }
+}
+.contact .contactform .check {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.contact .contactform .check input {
+  width: 16px;
+  height: 16px;
+  margin-right: 1em;
+  border-radius: none;
+}
+.contact .contactform .check p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #21272a;
+}
+.contact .contactform .submitbutton {
+  text-align: center;
+  margin: 0 auto;
+}
+.contact .contactform .submitbutton input {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 18px 80px;
+  background-color: #0094e5;
+  border: none;
+}
+.contact .contactform .submitbutton input:hover {
+  background-color: rgba(0, 149, 229, 0.3607843137);
+  color: #21272a;
+}
+
+.recruit_bg {
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+  background-image: url(../images/recruit.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 20.8333333333%;
+}
+
+.recruit_head {
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 80px;
+}
+.recruit_head h2 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 42px;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+}
+@media only screen and (max-width: 650px) {
+  .recruit_head h2 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .recruit_head {
+    margin-top: 60px;
+  }
+}
+
+.recruit_company {
+  width: 100vw;
+  margin: 0 auto;
+  /*aboutcompany*/
+  /*message*/
+  /*interview*/
+}
+.recruit_company .recruit_aboutcompany .yellow_head {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+.recruit_company .recruit_aboutcompany .yellow_head h3 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 68px;
+  color: rgba(239, 215, 0, 0.4980392157);
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 35px;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .recruit_aboutcompany .yellow_head h3 {
+    font-size: 32px;
+    line-height: 20px;
+  }
+}
+.recruit_company .recruit_aboutcompany .yellow_head p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 42px;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 10;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .recruit_aboutcompany .yellow_head p {
+    font-size: 20px;
+  }
+}
+.recruit_company .recruit_aboutcompany .aboutcompany_content {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.recruit_company .recruit_aboutcompany .aboutcompany_content h4 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 32px;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+  line-height: 56px;
+}
+.recruit_company .recruit_aboutcompany .aboutcompany_content h4 .big {
+  font-size: 48px;
+}
+.recruit_company .recruit_aboutcompany .aboutcompany_content h4 .blue {
+  font-size: 48px;
+  color: #0094e5;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .recruit_aboutcompany .aboutcompany_content h4 {
+    font-size: 24px;
+  }
+  .recruit_company .recruit_aboutcompany .aboutcompany_content h4 .big {
+    font-size: 34px;
+  }
+  .recruit_company .recruit_aboutcompany .aboutcompany_content h4 .blue {
+    font-size: 34px;
+  }
+}
+.recruit_company .recruit_aboutcompany .aboutcompany_content p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 38px;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .recruit_aboutcompany .aboutcompany_content p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+.recruit_company .recruit_message {
+  padding-bottom: 100px;
+}
+.recruit_company .recruit_message .yellow_head {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+.recruit_company .recruit_message .yellow_head h3 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 82px;
+  color: rgba(239, 215, 0, 0.4980392157);
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 35px;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .recruit_message .yellow_head h3 {
+    font-size: 42px;
+    line-height: 28px;
+  }
+}
+.recruit_company .recruit_message .yellow_head p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 36px;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 10;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .recruit_message .yellow_head p {
+    font-size: 24px;
+  }
+}
+.recruit_company .recruit_message .message_content .message_box {
+  width: 92%;
+  margin: 0 auto;
+  position: relative;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .recruit_message .message_content .message_box {
+    width: 90%;
+    margin: 0 auto;
+    position: static;
+  }
+}
+.recruit_company .recruit_message .message_content .message_box .message_img {
+  width: 53%;
+  aspect-ratio: 6/4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.recruit_company .recruit_message .message_content .message_box .message_img img {
+  width: 100%;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .recruit_message .message_content .message_box .message_img {
+    position: static;
+    width: 80%;
+  }
+}
+.recruit_company .recruit_message .message_content .message_box .message_copy {
+  width: 47%;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+.recruit_company .recruit_message .message_content .message_box .message_copy h4 {
+  text-align: center;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 34px;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .recruit_message .message_content .message_box .message_copy {
+    position: relative;
+    width: 100%;
+  }
+  .recruit_company .recruit_message .message_content .message_box .message_copy h4 {
+    width: 90%;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.3529411765);
+    font-size: 20px;
+  }
+}
+.recruit_company .recruit_message .message_content .message_box .message_message {
+  width: 53%;
+  position: absolute;
+  right: 0;
+  top: 150px;
+  background-color: #fff;
+  z-index: 10;
+}
+.recruit_company .recruit_message .message_content .message_box .message_message p {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  line-height: 34px;
+  padding-top: 5%;
+}
+.recruit_company .recruit_message .message_content .message_box .message_message .presidentname {
+  text-align: right;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .recruit_message .message_content .message_box .message_message {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  .recruit_company .recruit_message .message_content .message_box .message_message p {
+    font-size: 14px;
+  }
+}
+.recruit_company .interview {
+  margin-top: 600px;
+  padding-bottom: 100px;
+  background-color: #0094e5;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .interview {
+    margin-top: 0;
+  }
+}
+.recruit_company .interview .blue_head {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 80px;
+}
+.recruit_company .interview .blue_head h3 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 82px;
+  color: rgba(255, 255, 255, 0.4980392157);
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 35px;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .interview .blue_head h3 {
+    font-size: 42px;
+    line-height: 28px;
+  }
+}
+.recruit_company .interview .blue_head p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 42px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 10;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_company .interview .blue_head p {
+    font-size: 24px;
+  }
+}
+.recruit_company .interview .interview_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.recruit_company .interview .interview_content .interview_box {
+  width: 40%;
+  min-width: 350px;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 30px;
+}
+.recruit_company .interview .interview_content .interview_box .interview_box_img {
+  width: 100%;
+  aspect-ratio: 5/3;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  z-index: 10;
+}
+.recruit_company .interview .interview_content .interview_box .interview_box_img img {
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+.recruit_company .interview .interview_content .interview_box .interview_box_name {
+  background-color: rgba(239, 215, 0, 0.9254901961);
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 5/3;
+  right: 0;
+  top: 20px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  z-index: -10;
+}
+.recruit_company .interview .interview_content .interview_box .interview_box_name .interview_box_name_p {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  z-index: 20;
+}
+.recruit_company .interview .interview_content .interview_box .interview_box_name .interview_box_name_p p {
+  text-align: right;
+  padding-right: 10px;
+}
+.recruit_company .interview .interview_content .interview_box .interview_box_name .interview_box_name_p .position {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 500px) {
+  .recruit_company .interview .interview_content .interview_box .interview_box_name .interview_box_name_p .position {
+    font-size: 12px;
+  }
+}
+.recruit_company .interview .interview_content .interview_box .interview_box_name .interview_box_name_p .name {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+@media only screen and (max-width: 500px) {
+  .recruit_company .interview .interview_content .interview_box .interview_box_name .interview_box_name_p .name {
+    font-size: 16px;
+  }
+}
+.recruit_company .interview .interview_content .interview_box .interview_box_detail {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+.recruit_company .interview .interview_content .interview_box .interview_box_detail h4 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .recruit_company .interview .interview_content .interview_box .interview_box_detail h4 {
+    font-size: 16px;
+  }
+}
+.recruit_company .interview .interview_content .interview_box .interview_box_detail p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 21px;
+}
+@media only screen and (max-width: 500px) {
+  .recruit_company .interview .interview_content .interview_box .interview_box_detail p {
+    font-size: 12px;
+  }
+}
+
+.recruit_info {
+  width: 100vw;
+  margin: 0 auto;
+  /*recruit_info_pbox*/
+  /*recruit_info_occupation*/
+  /*recruit_info_guide*/
+  /*recruit_entryflow*/
+  /*entry_button*/
+}
+.recruit_info .recruit_info_pbox {
+  margin-top: 100px;
+}
+.recruit_info .recruit_info_pbox .pbox {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.recruit_info .recruit_info_pbox .pbox h4 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 32px;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 52px;
+  margin-bottom: 20px;
+}
+.recruit_info .recruit_info_pbox .pbox h4 .big {
+  font-size: 48px;
+  color: #000;
+}
+.recruit_info .recruit_info_pbox .pbox h4 .blue {
+  font-size: 48px;
+  color: #0094e5;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_info .recruit_info_pbox .pbox h4 {
+    font-size: 24px;
+  }
+  .recruit_info .recruit_info_pbox .pbox h4 .big {
+    font-size: 34px;
+  }
+  .recruit_info .recruit_info_pbox .pbox h4 .blue {
+    font-size: 34px;
+  }
+}
+.recruit_info .recruit_info_pbox .pbox p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 23px;
+}
+.recruit_info .recruit_info_pbox .recruit_button {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 180px;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_info .recruit_info_pbox .recruit_button {
+    display: block;
+  }
+}
+.recruit_info .recruit_info_pbox .recruit_button .recruit_guide_button {
+  width: 45%;
+  max-width: 550px;
+  min-width: 280px;
+  margin: 0 auto;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_info .recruit_info_pbox .recruit_button .recruit_guide_button {
+    width: 60%;
+    margin-bottom: 30px;
+  }
+}
+.recruit_info .recruit_info_pbox .recruit_button .recruit_guide_button a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0094e5;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.recruit_info .recruit_info_pbox .recruit_button .recruit_guide_button a:hover {
+  background-color: rgba(0, 149, 229, 0.4823529412);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #000;
+}
+.recruit_info .recruit_info_pbox .recruit_button .recruit_guide_button i {
+  margin-left: 1em;
+}
+.recruit_info .recruit_info_pbox .recruit_button .recruit_entry_button {
+  width: 45%;
+  max-width: 550px;
+  min-width: 280px;
+  margin: 0 auto;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+}
+@media only screen and (max-width: 720px) {
+  .recruit_info .recruit_info_pbox .recruit_button .recruit_entry_button {
+    width: 60%;
+  }
+}
+.recruit_info .recruit_info_pbox .recruit_button .recruit_entry_button a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  background-color: #efd700;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.recruit_info .recruit_info_pbox .recruit_button .recruit_entry_button a:hover {
+  background-color: rgba(239, 215, 0, 0.4823529412);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #9a9a9a;
+}
+.recruit_info .recruit_info_pbox .recruit_button .recruit_entry_button i {
+  margin-left: 1em;
+}
+.recruit_info .recruit_info_occupation {
+  width: 85%;
+  margin: 0 auto;
+}
+.recruit_info .recruit_info_occupation .recruit_info_head {
+  width: 330px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.recruit_info .recruit_info_occupation .recruit_info_head h4 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 20px 0;
+  border: 4px solid #0094e5;
+}
+.recruit_info .recruit_info_occupation .contentsBlock {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 850px) {
+  .recruit_info .recruit_info_occupation .contentsBlock {
+    display: block;
+    margin-bottom: 80px;
+  }
+}
+.recruit_info .recruit_info_occupation .contentsBlock .contentsBlock_image {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  aspect-ratio: 6/4;
+}
+.recruit_info .recruit_info_occupation .contentsBlock .contentsBlock_image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 6/4;
+}
+@media only screen and (max-width: 850px) {
+  .recruit_info .recruit_info_occupation .contentsBlock .contentsBlock_image {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.recruit_info .recruit_info_occupation .contentsBlock .contentsBlock_discription {
+  display: flex;
+  width: 50%;
+  background-color: #fff;
+}
+@media only screen and (max-width: 850px) {
+  .recruit_info .recruit_info_occupation .contentsBlock .contentsBlock_discription {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+.recruit_info .recruit_info_occupation .contentsBlock .contentsBlock_discription h4 {
+  color: #000;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 28px;
+  line-height: 42px;
+  margin: 0 auto;
+}
+.recruit_info .recruit_info_occupation .contentsBlock .contentsBlock_discription p {
+  color: #000;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  line-height: 21px;
+  padding-right: 20px;
+}
+@media only screen and (max-width: 850px) {
+  .recruit_info .recruit_info_occupation .contentsBlock .contentsBlock_discription p {
+    padding-right: 0;
+  }
+}
+.recruit_info .recruit_info_guide {
+  margin-top: 150px;
+  margin-bottom: 180px;
+}
+.recruit_info .recruit_info_guide .recruit_info_head {
+  width: 330px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.recruit_info .recruit_info_guide .recruit_info_head h4 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 20px 0;
+  border: 4px solid #0094e5;
+}
+.recruit_info .recruit_info_guide .guide_table {
+  width: 80%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 850px) {
+  .recruit_info .recruit_info_guide .guide_table {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.recruit_info .recruit_info_guide .guide_table tr {
+  border-bottom: 1px solid #000;
+}
+.recruit_info .recruit_info_guide .guide_table tr .left {
+  width: 20%;
+  padding-left: 1em;
+}
+@media only screen and (max-width: 470px) {
+  .recruit_info .recruit_info_guide .guide_table tr .left {
+    padding-left: 0;
+  }
+}
+.recruit_info .recruit_info_guide .guide_table tr .right {
+  padding-left: 1em;
+}
+.recruit_info .recruit_info_guide .guide_table tr .right, .recruit_info .recruit_info_guide .guide_table tr .left {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  color: #21272a;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media only screen and (max-width: 850px) {
+  .recruit_info .recruit_info_guide .guide_table tr .right, .recruit_info .recruit_info_guide .guide_table tr .left {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .recruit_info .recruit_info_guide .guide_table tr .right, .recruit_info .recruit_info_guide .guide_table tr .left {
+    font-size: 12px;
+  }
+}
+.recruit_info .recruit_info_guide .guide_table tr .guide_table_list {
+  list-style: none;
+}
+.recruit_info .recruit_info_guide .guide_table tr .guide_table_list li + li {
+  margin-top: 15px;
+}
+.recruit_info .recruit_entryflow {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  margin-bottom: 150px;
+}
+.recruit_info .recruit_entryflow .entryflow_head {
+  width: 100%;
+  background-color: #0094e5;
+  text-align: center;
+}
+.recruit_info .recruit_entryflow .entryflow_head h4 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.recruit_info .recruit_entryflow .entryflow {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.recruit_info .recruit_entryflow .entryflow ol {
+  counter-reset: my-counter;
+  list-style: none;
+  padding: 0;
+}
+.recruit_info .recruit_entryflow .entryflow ol li::before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  background-color: #0094e5;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: -10px;
+  margin-right: 1em;
+}
+.recruit_info .recruit_entryflow .entryflow ol li + li {
+  margin-top: 40px;
+}
+.recruit_info .recruit_entryflow .entryflow ol h5 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  color: #000;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+.recruit_info .recruit_entryflow .entryflow ol p {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  color: #000;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 3.8em;
+}
+.recruit_info .entry_button {
+  margin-bottom: 100px;
+}
+.recruit_info .entry_button .entry_button {
+  width: 50%;
+  max-width: 550px;
+  min-width: 300px;
+  margin: 0 auto;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+}
+@media only screen and (max-width: 960px) {
+  .recruit_info .entry_button .entry_button {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+.recruit_info .entry_button .entry_button a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  background-color: #efd700;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.recruit_info .entry_button .entry_button a:hover {
+  background-color: rgba(239, 215, 0, 0.4823529412);
+  color: #9a9a9a;
+}
+.recruit_info .entry_button .entry_button a:hover i {
+  transform: translateX(20px);
+}
+.recruit_info .entry_button .entry_button i {
+  margin-left: 1em;
+  transition: transform 0.3s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */
