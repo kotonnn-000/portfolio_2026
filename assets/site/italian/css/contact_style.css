@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	min-width: 1010px;
+	margin: auto;
+	flex: 1;
+}
+
+
+/*main*/
+
+/*main_tittle*/
+
+.main_tittle h1 {
+	font-family: "Yu Mincho";
+	font-size: 36px;
+	color: #666666;
+	margin-top: 90px;
+	text-align: center;
+	font-weight: normal;
+}
+
+.main_tittle h2 {
+	font-family: "Yu Mincho";
+	font-size: 24px;
+	color: #666666;
+	margin-top: 5px;
+	text-align: center;
+	margin-bottom: 70px;
+	font-weight: normal;
+}
+
+
+.contact_form {
+	width: 890px;
+	height: 770px;
+	margin: auto;
+	border: solid 1px #CCCCCC;
+	margin-bottom: 90px;
+}
+
+.contact_form .contact_p {
+	text-align: center;
+	color: #666666;
+	margin: 40px auto;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.contact_form label {
+	font-family: "Yu Mincho";
+	color: #666666;
+	font-size: 24px;
+	padding-top: 10px;
+	text-align: right
+}
+
+.contact_form .form {
+	display: flex;
+	margin-bottom: 20px;
+	justify-content:flex-end;
+	margin-right: 120px;
+}
+
+.contact_form .form input {
+	background-color: #EEEEEE;
+	width: 410px;
+	height: 40px;
+	border: 0;
+	font-family: "Yu Mincho";
+	font-size: 16px;
+	color: #999999;
+	margin-left: 20px;
+	padding-left: 1em;
+}
+
+.contact_form textarea {
+	background-color: #EEEEEE;
+	width: 424px;
+	height: 240px;
+	border: 0;
+	margin-left: 20px;
+}
+
+.contact_form .btn input {
+	background-color: #666666;
+	color: #ffffff;
+	font-family: "Yu Mincho";
+	width: 140px;
+	height: 46px;
+	border: 0;
+}
+
+.contact_form .btn {
+	text-align: center;
+	margin-bottom: 40px;
+}

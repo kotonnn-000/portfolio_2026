@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>BMW Fan!!!!!</title>
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/13414a3658.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/brands.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1><a href="toppage.html">BMW Fan!!!!!</a></h1>
+        <div class="topNav">
+            <!--humburger-->
+            <div class="navHamburger">
+                <div class="buttonTrigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav>
+                <ul class="headerNav">
+                    <li><a href="toppage.html">Home</a></li>
+                    <li><a href="page01.html">BMW</a></li>
+                    <li><a href="page02.html">エンブレムの由来</a></li>
+                    <li><a href="page03.html">製品の特徴</a></li>
+                    <li><a href="page04.html">二輪車</a></li>
+                    <li><a href="page05.html">モータースポーツ</a></li>
+                    <li><a href="page06.html">運営状況</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="pageArticle page02">
+            <div class="image" id="img">
+            </div>
+            <h2 class="title">エンブレムの由来</h2>
+            <h3 class="subtitle">Origin of the emble</h3>
+            <div class="pbox">
+                <div class="pleft">
+                    <p>1917年10月5日にBMWのロゴマークが商標登録された。1929年の広報広告により、現在の黒く縁取った円の中央を十字によって4等分し、 点対称に青と白に塗り分けたデザインである。円と十字はかつて航空機エンジンメーカーであった事にちなみ飛行機の回転するプロペラを表したイメージが確立した。 現在の公式サイトやカタログでもプロペラをモチーフにして、バイエルンの白い雲と青い空をイメージしていると表記されている。</p>
+                    <p>上記により、ブランドロゴとして航空機のプロペラをモチーフとしたブランドイメージが確立し、ロゴイメージの由来として一般に浸透した。 エンブレムのデザインは過去に何度か微妙にBMWの字体とその位置程度が変わっているが、基本的な部分は変わらない。</p>
+                </div>
+                <div class="pright">
+                    <p>2010年1月7日付けのニューヨークタイムズにて、実際は黒の円は母体となったRapp Motorenwerke GmbHのエンブレムマークに由来し、 中央の青と白はバイエルン王ヴィッテルスバッハ家の紋章に起源を持つ旧バイエルン王国、現在のバイエルン州旗にちなむという記事が出た。 それはブランドイメージに寄与する内容ではなく、メーカーが認定しないゴシップ記事に過ぎない。</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="sns">
+            <ul class="icons">
+                <li><a href="#" class="fa-brands fa-square-facebook"><span class="label"></span></a></li>
+                <li><a href="#" class="fa-brands fa-square-x-twitter"><span class="label"></span></a></li>
+                <li><a href="#" class="fa-brands fa-square-instagram"><span class="label"></span></a></li>
+            </ul>
+        </div>
+        <p><small>&copy;BMW Fan!!!!!.</small></p>
+    </footer>
+
+
+
+    <script>
+        {
+            /*ドキュメントオブジェクト*/
+            const conteClassObject = document.querySelectorAll('pageArticle');
+            let: i;
+
+            /*スクロールイベント*/
+            window.addEventListener('scroll',function(){
+                let scrollValue = document.documentElement.scrollTop;
+                console.log(scrollValue);
+                let position = 'center' + -(scrollValue/20) + 'px';
+                for(i = 0; i < conteClassObject.length ; i++){
+                    conteClassObject[i].style.backgroundPosition = position;
+                }
+            });
+        }
+    </script>
+
+<script src="js/hamburger.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.inview.min.js"></script>
+<script src="js/jquery.fadethis.min.js"></script>
+<script src="js/practice06.js"></script>
+
+    <script>
+        $(function(){
+            $(window).fadeThis({
+                speed:1000
+            });
+        });
+    </script>
+</body>
+
+</html>

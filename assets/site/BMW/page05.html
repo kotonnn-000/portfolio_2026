@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>BMW Fan!!!!!</title>
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/13414a3658.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/brands.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1><a href="toppage.html">BMW Fan!!!!!</a></h1>
+        <div class="topNav">
+            <!--humburger-->
+            <div class="navHamburger">
+                <div class="buttonTrigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav>
+                <ul class="headerNav">
+                    <li><a href="toppage.html">Home</a></li>
+                    <li><a href="page01.html">BMW</a></li>
+                    <li><a href="page02.html">エンブレムの由来</a></li>
+                    <li><a href="page03.html">製品の特徴</a></li>
+                    <li><a href="page04.html">二輪車</a></li>
+                    <li><a href="page05.html">モータースポーツ</a></li>
+                    <li><a href="page06.html">運営状況</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="pageArticle page05">
+            <div class="image" id="img">
+            </div>
+            <h2 class="title">モータースポーツ</h2>
+            <h3 class="subtitle">Motor sports</h3>
+            <div class="pbox">
+                <div class="pleft">
+                    <p>モータースポーツには古くから比較的積極的な姿勢を見せている。 特に活動が目立つのがツーリングカーレースで、シュニッツァー・モータースポーツやハーマンモータースポーツなどのセミワークスチームを多数抱え、世界ツーリングカー選手権（WTCC）やニュルブルクリンク24時間レースなどのレースに積極的に参戦している。</p>
+                </div>
+                <div class="pright">
+                    <p>F1へはエンジンサプライヤーとして、1982年 - 1988年そして2000年 - 2005年と2期参戦。1982年6月の第8戦カナダグランプリで初優勝し、1983年にはネルソン・ピケがブラバム・BMWを駆ってドライバーズタイトルを獲得した。2006年からはザウバー・チームを買収し、BMWザウバーF1チームとしてワークス参戦。2008年6月の第7戦カナダグランプリ（FORMULA1-Grand Prix du Canada 2008）で初優勝を飾るなど活躍を見せた。</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="sns">
+            <ul class="icons">
+                <li><a href="#" class="fa-brands fa-square-facebook"><span class="label"></span></a></li>
+                <li><a href="#" class="fa-brands fa-square-x-twitter"><span class="label"></span></a></li>
+                <li><a href="#" class="fa-brands fa-square-instagram"><span class="label"></span></a></li>
+            </ul>
+        </div>
+        <p><small>&copy;BMW Fan!!!!!.</small></p>
+    </footer>
+
+
+
+    <script>
+        {
+            /*ドキュメントオブジェクト*/
+            const conteClassObject = document.querySelectorAll('pageArticle');
+            let: i;
+
+            /*スクロールイベント*/
+            window.addEventListener('scroll',function(){
+                let scrollValue = document.documentElement.scrollTop;
+                console.log(scrollValue);
+                let position = 'center' + -(scrollValue/20) + 'px';
+                for(i = 0; i < conteClassObject.length ; i++){
+                    conteClassObject[i].style.backgroundPosition = position;
+                }
+            });
+        }
+    </script>
+
+<script src="js/hamburger.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.inview.min.js"></script>
+<script src="js/jquery.fadethis.min.js"></script>
+<script src="js/practice06.js"></script>
+
+    <script>
+        $(function(){
+            $(window).fadeThis({
+                speed:1000
+            });
+        });
+    </script>
+</body>
+
+</html>

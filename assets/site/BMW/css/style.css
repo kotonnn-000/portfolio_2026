@@ -1,0 +1,613 @@
+@charset "UTF-8";
+/*Header*/
+.header {
+  margin: 0 auto;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+.header h1 {
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #fff;
+  padding: 23px 24px;
+}
+.header .topNav .navHamburger {
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  padding: 25px 19px;
+}
+.header .topNav .navHamburger .buttonTrigger,
+.header .topNav .navHamburger .buttonTrigger span {
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.4s;
+  z-index: 30;
+}
+.header .topNav .navHamburger .buttonTrigger {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  right: 70px;
+  width: 15px;
+  height: 15px;
+  z-index: 30;
+}
+.header .topNav .navHamburger .buttonTrigger::after {
+  content: "MENU";
+  font-family: Verdana, sans-serif;
+  color: #F2F2F2;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  z-index: 30;
+}
+.header .topNav .navHamburger .buttonTrigger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+.header .topNav .navHamburger .buttonTrigger span:nth-of-type(1) {
+  top: 29px;
+}
+.header .topNav .navHamburger .buttonTrigger span:nth-of-type(2) {
+  top: 34px;
+}
+.header .topNav .navHamburger .buttonTrigger span:nth-of-type(3) {
+  top: 39px;
+}
+.header .topNav .navHamburger .buttonTrigger.active span:nth-of-type(1) {
+  transform: translateY(5px) rotate(-45deg);
+}
+.header .topNav .navHamburger .buttonTrigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.header .topNav .navHamburger .buttonTrigger.active span:nth-of-type(3) {
+  transform: translateY(-5px) rotate(45deg);
+}
+.header .topNav .headerNav {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 320px;
+  z-index: 30;
+  background-color: #000;
+}
+.header .topNav .headerNav li {
+  list-style: none;
+  box-sizing: border-box;
+  border-top: 1px solid #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0 32px;
+}
+.header .topNav .headerNav li a {
+  font-size: 16px;
+  line-height: 27px;
+  color: #F2F2F2;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+.header .topNav .headerNav.open {
+  display: block;
+}
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Footer*/
+.footer {
+  margin: 0 auto;
+  background-color: #333;
+}
+.footer .sns {
+  padding-top: 73px;
+  margin-bottom: 48px;
+}
+.footer .sns .icons {
+  display: flex;
+  justify-content: center;
+}
+.footer .sns li {
+  list-style: none;
+}
+.footer .sns li + li {
+  margin-left: 20px;
+}
+.footer .sns a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+}
+.footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+  padding-bottom: 78px;
+}
+
+.mainArticle {
+  margin: 0 auto;
+}
+.mainArticle .mainVisual {
+  height: auto;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+}
+.mainArticle .mainVisual img {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .mainArticle .mainVisual {
+    width: 100%;
+    height: auto;
+    background: none;
+    position: static;
+  }
+  .mainArticle .mainVisual img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+.mainArticle #img {
+  background-image: url(../images/pic1.jpg);
+  height: 720px;
+}
+@media only screen and (max-width: 991px) {
+  .mainArticle #img {
+    background: none;
+    height: auto;
+    width: 100%;
+  }
+}
+.mainArticle .contentDiagonal {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+@media only screen and (max-width: 991px) {
+  .mainArticle .contentDiagonal {
+    position: static;
+    background-color: #3F95D8;
+  }
+  .mainArticle .contentDiagonal h1 {
+    padding-top: 145px;
+  }
+}
+.mainArticle .contentDiagonal h1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  color: #f2f2f2;
+  margin: 0 auto;
+  margin-bottom: 44px;
+}
+.mainArticle .contentDiagonal p {
+  font-size: 28px;
+  line-height: 45px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+  color: #f2f2f2;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+.mainArticle .contentDiagonal .continueButton {
+  padding-bottom: 142px;
+}
+.mainArticle .contentDiagonal .continueButton a {
+  text-decoration: none;
+  color: #f2f2f2;
+  padding: 14px 38px;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: Verdana, sans-serif;
+  border: solid 1px #f2f2f2;
+}
+.mainArticle .contentDiagonal .continueButton a:hover {
+  background-color: #f2f2f2;
+  color: #3F95D8;
+}
+.mainArticle .contentDiagonal::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: calc(100% + 50px);
+  position: absolute;
+  top: -120px;
+  left: 0;
+  z-index: -1;
+  background-color: #3F95D8;
+  transform: skewY(-5deg);
+}
+@media only screen and (max-width: 991px) {
+  .mainArticle .contentDiagonal::after {
+    display: none;
+    transform: none;
+    position: static;
+  }
+}
+
+.contentBMW {
+  width: 520px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.contentBMW h2 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 58px;
+  font-weight: bold;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  margin-bottom: 22px;
+  color: #2DBC9C;
+}
+.contentBMW h3 {
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+  color: #CCCCCC;
+  padding: 15px 0;
+  border-top: solid 1px #CCCCCC;
+  border-bottom: solid 1px #CCCCCC;
+}
+.contentBMW p {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  margin-top: 22px;
+  margin-bottom: 41px;
+  text-align: center;
+}
+.contentBMW .moreButton {
+  text-align: center;
+  margin-bottom: 98px;
+}
+.contentBMW .moreButton a {
+  text-decoration: none;
+  padding: 14px 38px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2DBC9C;
+  font-family: Verdana, sans-serif;
+  border: solid 1px #CCCCCC;
+}
+.contentBMW .moreButton a:hover {
+  background-color: #2DBC9C;
+  color: #FFF;
+}
+@media only screen and (max-width: 991px) {
+  .contentBMW {
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .contentBMW h2,
+.contentBMW h3,
+.contentBMW p,
+.contentBMW .moreButton {
+    text-align: left;
+  }
+}
+
+.column .content {
+  display: flex;
+  width: 100%;
+  height: 680px;
+  margin: auto;
+}
+.column .content__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: right;
+  padding: 60px;
+  box-sizing: border-box;
+  width: 50%;
+}
+.column .content__item h2 {
+  font-size: 36px;
+  line-height: 58px;
+  font-weight: bold;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  margin-bottom: 22px;
+}
+.column .content__item h3 {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+  padding: 15px 0;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+.column .content__item p {
+  font-size: 14px;
+  line-height: 29px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+.column .content__item .moreButton a {
+  text-decoration: none;
+  padding: 14px 38px;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: Verdana, sans-serif;
+  border: solid 1px;
+}
+.column #second {
+  background-color: #2DBC9C;
+}
+.column #second h2 {
+  color: #fff;
+}
+.column #second h3 {
+  color: #fff;
+  border-color: #fff;
+}
+.column #second p {
+  color: #fff;
+}
+.column #second .moreButton a {
+  color: #fff;
+  border-color: #fff;
+}
+.column #second .moreButton a:hover {
+  background-color: #fff;
+  color: #2DBC9C;
+}
+.column #third h2 {
+  color: #3F95D8;
+}
+.column #third h3 {
+  color: #CCCCCC;
+  border-color: #CCCCCC;
+}
+.column #third .moreButton a {
+  color: #3F95D8;
+  border-color: #CCCCCC;
+}
+.column #third .moreButton a:hover {
+  background-color: #3F95D8;
+  color: #CCCCCC;
+  border-color: #3F95D8;
+}
+.column #fourth {
+  background-color: #3F95D8;
+}
+.column #fourth h2 {
+  color: #fff;
+}
+.column #fourth h3 {
+  color: #fff;
+  border-color: #fff;
+}
+.column #fourth p {
+  color: #fff;
+}
+.column #fourth .moreButton a {
+  color: #fff;
+  border-color: #fff;
+}
+.column #fourth .moreButton a:hover {
+  background-color: #fff;
+  color: #3F95D8;
+}
+.column #fifth h2 {
+  color: #9956B2;
+}
+.column #fifth h3 {
+  color: #CCCCCC;
+  border-color: #CCCCCC;
+}
+.column #fifth .moreButton a {
+  color: #9956B2;
+  border-color: #CCCCCC;
+}
+.column #fifth .moreButton a:hover {
+  background-color: #9956B2;
+  color: #CCCCCC;
+  border-color: #9956B2;
+}
+.column #sixth {
+  background-color: #9956B2;
+}
+.column #sixth h2 {
+  color: #fff;
+}
+.column #sixth h3 {
+  color: #fff;
+  border-color: #fff;
+}
+.column #sixth p {
+  color: #fff;
+}
+.column #sixth .moreButton a {
+  color: #fff;
+  border-color: #fff;
+}
+.column #sixth .moreButton a:hover {
+  background-color: #fff;
+  color: #9956B2;
+}
+.column .content:nth-of-type(2n-1) .content__item {
+  order: 1;
+  text-align: left;
+}
+.column .content__image {
+  width: 50%;
+  overflow: hidden;
+}
+.column .content__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 991px) {
+  .column .content {
+    flex-direction: column;
+    height: auto;
+  }
+  .column .content__item {
+    width: 100%;
+    order: 1;
+    text-align: left;
+  }
+  .column .content__image {
+    width: 100%;
+  }
+  .column .content__image img {
+    height: auto;
+    -o-object-fit: inherit;
+       object-fit: inherit;
+  }
+}
+
+/*Article*/
+.pageArticle {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.pageArticle .image {
+  max-width: 960px;
+  width: 100%;
+  height: 560px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 41px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 960px) {
+  .pageArticle .image {
+    margin-top: 0;
+    margin-bottom: 27px;
+  }
+}
+.pageArticle h2 {
+  font-size: 36px;
+  line-height: 58px;
+  font-weight: bold;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+@media only screen and (max-width: 960px) {
+  .pageArticle h2 {
+    width: 93vw;
+    margin: auto;
+  }
+}
+.pageArticle h3 {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+  color: #ccc;
+  padding: 14px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+@media only screen and (max-width: 960px) {
+  .pageArticle h3 {
+    width: 93vw;
+    margin: auto;
+  }
+}
+.pageArticle .pbox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+.pageArticle .pbox p {
+  margin-top: 30px;
+  width: 420px;
+  color: #333333;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 29px;
+}
+@media only screen and (max-width: 960px) {
+  .pageArticle .pbox {
+    display: block;
+    margin-bottom: 34px;
+  }
+  .pageArticle .pbox p {
+    width: 93vw;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+
+.page01 #img {
+  background-image: url(../images/pic1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.page02 #img {
+  background-image: url(../images/pic2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.page03 #img {
+  background-image: url(../images/pic3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.page04 #img {
+  background-image: url(../images/pic4.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.page05 #img {
+  background-image: url(../images/pic5.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.page06 #img {
+  background-image: url(../images/pic6.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */

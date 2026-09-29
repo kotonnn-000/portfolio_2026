@@ -1,0 +1,503 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: auto;
+}
+
+
+/*header*/
+
+.main_title {
+	height: 55px;
+	margin: auto;
+	background-color: #37475A;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/*main title*/
+
+.main_title h1 {
+	margin-left: 15px;
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 24px;
+	color: #FCFCFC;
+}
+
+.main_title h1 .span1 {
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 12px;
+	color: #FCFCFC;
+}
+
+.main_title h1 .span2 {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 12px;
+	color: #FCFCFC;
+}
+
+
+
+
+/*search*/
+
+.header_search form {
+	display: flex;
+	margin-right: 15px;
+}
+
+.header_search #search{
+	width: 350px;
+	border: none;
+	border-top-left-radius: 0.2em;
+	border-bottom-left-radius: 0.2em;
+}
+
+.header_search #submit_btn {
+	width: 50px;
+	height: 35px;
+	background-color: #FEBD69;
+	background-image: url("../img/search_icon.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: none;
+	border-top-right-radius: 0.2em;
+	border-bottom-right-radius: 0.2em;
+}
+
+
+
+
+
+
+/*url list*/
+
+.url_list p {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-size: 12px;
+	margin: 12px 0 12px 16px;
+	color: #294C12;
+}
+
+.url_list a {
+	text-decoration: underline;
+	color: #294C12;
+}
+
+
+/*product*/
+
+.product {
+	display: flex;
+}
+
+
+/*image*/
+
+.product_image_list ul li {
+	list-style: none;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.product_image_list ul li+li {
+	margin-top: 10px;
+}
+
+.product_image_list ul li img {
+	width: 40px;
+}
+
+
+.product_image_main img {
+	width: 300px;
+	margin-right: 30px;
+}
+
+
+
+/*product about*/
+
+.product_about {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.product_about h2 {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 6px;
+}
+
+.product_about a {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.product_about .border {
+	border-bottom: solid 1px #999999;
+	margin: 7px 0 10px 0;
+}
+
+.product_about .price {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 16px;
+	margin-bottom: 2px;
+}
+
+.product_about .price span {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 16px;
+	color: #772222;
+	margin-bottom: 2px;
+}
+
+.product_about .inventory {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 16px;
+	color: #294C12;
+	margin-bottom: 12px;
+}
+
+.product_about .inventory span {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 12px;
+	margin-bottom: 12px;
+}
+
+
+.product_about .delivery , .product_about .color {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+
+
+
+/*buy*/
+
+.buy {
+	width: 245px;
+	height: 135px;
+	border: solid 1px #999999;
+	border-radius: 0.5em;
+}
+
+.buy .price {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 14px;
+	margin: 14px 0 12px 17px;
+}
+
+.buy .price span {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 16px;
+	margin: 12px 0 7.5px 4px;
+	color: #772222;
+}
+
+.buy form label {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 14px;
+	margin-left: 17px;
+}
+
+.buy form select {
+	width: 39px;
+	height: 29px;
+	border-color: #999999;
+	border-radius: 0.5em;
+	font-size: 14px;
+}
+
+.buy .cart_btn input {
+	width: 213px;
+	height: 30px;
+	background-color: #FEBD69;
+	border: none;
+	border-radius: 0.2em;
+	margin: 20.5px 15px 15px 17px;
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 14px;
+	text-align: center;
+}
+
+
+.listin_btn {
+	border: solid 1px #999999;
+	width: 245px;
+	height: 60px;
+	border-radius: 0.5em;
+	margin-top: 15px;
+}
+
+.listin_btn input {
+	background-color: #EEEEEE;
+	border: none;
+	border-radius: 0.2em;
+	width: 213px;
+	height: 30px;
+	margin: 15px 15px 15px 17px;
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 14px;
+}
+
+
+.buy_parent {
+	margin-left: 30px;
+	margin-right: 15px;
+}
+
+
+
+
+/*buy attention*/
+
+.buy_attention p {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 12px;
+	min-width: 960px;
+	margin: 18px 0;
+}
+
+.buy_attention {
+	border-bottom: solid 1px #999999;
+	min-width: 960px;
+	margin: auto;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+
+
+
+/*product detail*/
+
+.product_detail_parent h3 {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 16px;
+	color: #BA8313;
+	margin: 15.5px 0 8px 16px;
+}
+
+
+.product_detail {
+	display: flex;
+	min-width: 960px;
+}
+
+.product_detail .flex_left , .product_detail .flex_right {
+	width: 50%;
+}
+
+.product_detail h4 {
+	font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+	font-weight: normal;
+	font-size: 16px;
+	border-bottom: 1px solid #999999;
+	padding-bottom: 8.5px;
+	margin: 0 15px 8.5px 15px;
+}
+
+
+.product_detail table {
+	width: 90%;
+	margin-left: 25px;
+	margin-right: 15.5px;
+}
+
+.product_detail table tr {
+	border: dotted 1px #CCCCCC;
+	border-left: none;
+	border-right: none;
+	line-height: 20px;
+}
+
+.product_detail table th {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 11px;
+	text-align: left;
+	background-color: #EEEEEE;
+	padding-left: 7px;
+}
+
+.product_detail table td {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 11px;
+	padding-left: 9px;
+}
+
+
+.support h4 {
+	margin-top: 30.5px;
+}
+
+.support p {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 17px;
+	margin-bottom: 16px;
+	margin-left: 16px;
+	margin-right: 15px;
+}
+
+
+.related_product h5 {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 16px;
+	margin-top: 12px;
+	margin-left: 19px;
+}
+
+.related_product p  {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-size: 12px;
+	margin: 4px 0 29px 19px;
+	color: #294C12;
+}
+
+.related_product a {
+	text-decoration: underline;
+	color: #294C12;
+}
+
+
+
+
+
+/*footer*/
+
+/*to top*/
+
+.totop_btn {
+	background-color: #37475A;
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
+
+.totop_btn a {
+	text-decoration: none;
+	color: #FFFFFF
+}
+
+.totop_btn p {
+	align-items: center;
+}
+
+
+
+.footer_list_parent {
+	height: 268px;
+	background-color: #232F3E;
+	display: flex;
+}
+
+.footer_list {
+	width: 25%;
+	margin-left:40px;
+	margin-top: 30px;
+}
+
+.footer_list h6 {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: bold;
+	font-size: 18px;
+	color: #FFFFFF;
+	line-height: 29px;
+	margin-bottom: 11px;
+}
+
+
+.footer_list li {
+	list-style:  none;
+	line-height: 22px;
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.footer_list a {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+
+
+.footer_footer {
+	height: 95px;
+	background-color:#131A22;
+	text-align: center;
+}
+
+.footer_footer h6 {
+	padding-top: 18px;
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 24px;
+	color: #FCFCFC;
+}
+
+.footer_footer h6 span {
+	font-family: YuGothic, 'Yu Gothic medium', 'Hiragino Sans', Meiryo, 'sans-serif';
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.copyright ul {
+	margin-top: 8px;
+	justify-content: center;
+	display: flex;
+}
+
+.copyright ul li {
+	list-style: none;
+	border-left: solid 1px #FFFFFF;
+	color: #FFFFFF;
+}
+
+.copyright ul li:first-child {
+	border-left: none;
+}
+
+.copyright ul li:last-child {
+	border-left: none;
+}
+
+.copyright ul li+li {
+	margin-left: 5px;
+	padding-left: 5px;
+}
+	
+
+.copyright a {
+	text-decoration: none;
+	color: #FFFFFF;
+}

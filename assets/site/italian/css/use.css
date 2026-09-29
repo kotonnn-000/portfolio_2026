@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	min-width: 1010px;
+	margin: auto;
+	flex: 1;
+}
+
+/*header*/
+
+/*home*/
+
+.nav_home a {
+	width: 260px;
+	background-color: #888888;
+	display: flex;
+	padding: 10px;
+}
+
+.nav_home img {
+	height: 35px;
+}
+
+.navmenu_icon_upper {
+	font-size: 22px;
+	font-family: "Yu Mincho";
+}
+
+.navmenu_icon_lower {
+	font-size: 12px;
+	font-family: "Yu Mincho";
+}
+
+.icon_p {
+	margin-left: 10px;
+	color: #FFFFFF;
+}
+
+
+
+
+.navmenu_p_upper {
+	font-family: "Yu Mincho";
+	font-size: 18px;
+	color: #9E9764;
+	text-align: center;
+}
+
+.navmenu_p_lower {
+	font-family: "Yu Mincho";
+	font-size: 12px;
+	color: #555555;
+	text-align: center;
+}
+
+.gloabal_menu ul {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	margin: auto;
+	justify-content: center;
+	background-color: #EEEEEE;
+	height: 80px;
+}
+
+.nav {
+	border-left: solid 1px #555555;
+	width: 150px;
+}
+
+.gloabal_menu li:nth-child(2) {
+	border: none;
+}
+
+header nav a {
+	text-decoration: none;
+}
+
+
+
+
+
+
+/*footer*/
+
+.line {
+	background-image: url("../img/top_footer_tri_bg.png");
+	height: 8px;
+}
+
+
+.footer {
+	background-color: #E88C4D;
+	min-height: 70px;
+}
+
+.footer .footer_detail {
+	display: flex;
+	justify-content: center;
+	font-size: 14px;
+	padding-top: 17px;
+	padding-bottom: 10px;
+}
+
+.footer .footer_detail p+p {
+	margin-left: 15px
+}
+
+
+
+.footer .copyright {
+	text-align: center;
+	font-size: 12px;
+}

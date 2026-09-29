@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>BMW Fan!!!!!</title>
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/13414a3658.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/brands.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1><a href="toppage.html">BMW Fan!!!!!</a></h1>
+        <div class="topNav">
+            <!--humburger-->
+            <div class="navHamburger">
+                <div class="buttonTrigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav>
+                <ul class="headerNav">
+                    <li><a href="toppage.html">Home</a></li>
+                    <li><a href="page01.html">BMW</a></li>
+                    <li><a href="page02.html">エンブレムの由来</a></li>
+                    <li><a href="page03.html">製品の特徴</a></li>
+                    <li><a href="page04.html">二輪車</a></li>
+                    <li><a href="page05.html">モータースポーツ</a></li>
+                    <li><a href="page06.html">運営状況</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="pageArticle page06">
+            <div class="image" id="img">
+            </div>
+            <h2 class="title">経営状況</h2>
+            <h3 class="subtitle">Business conditions</h3>
+            <div class="pbox">
+                <div class="pleft">
+                    <p>2011年通期の世界市場での販売実績はBMWグループ全体として166万8982台、内訳はBMW138万384台、MINI28万5060台、ロールスロイス3538台、売上高は688億2100万ユーロ（2003年通期の世界市場での販売実績はBMWグループ全体として110万4916台、売上高は415億2500万ユーロ）。</p>
+                </div>
+                <div class="pright">
+                    <p>BMWは同族会社であり、株式の約47%がズザンネ・クラッテン、シュテファン・クヴァントら、ドイツ・クヴァント家により所有されている。経営は良好であり、過去40年以上赤字を出していないとも言われる。一方、傘下に収めた英国ローバー・グループの経営再建には失敗し、2000年、同グループは解体に至った。ランドローバーをフォードに譲渡、収益の見込めるMINIについては自社で継続所有、その他、ローバー、MGなどをたった10ポンドで英国の投資会社に売却したことは話題となった。 生産拠点について、1970年代から稼動する南アフリカの工場のほか、近年はアメリカ、中国、パキスタンなど、ドイツ国外における展開に積極的である。</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="sns">
+            <ul class="icons">
+                <li><a href="#" class="fa-brands fa-square-facebook"><span class="label"></span></a></li>
+                <li><a href="#" class="fa-brands fa-square-x-twitter"><span class="label"></span></a></li>
+                <li><a href="#" class="fa-brands fa-square-instagram"><span class="label"></span></a></li>
+            </ul>
+        </div>
+        <p><small>&copy;BMW Fan!!!!!.</small></p>
+    </footer>
+
+
+
+    <script>
+        {
+            /*ドキュメントオブジェクト*/
+            const conteClassObject = document.querySelectorAll('pageArticle');
+            let: i;
+
+            /*スクロールイベント*/
+            window.addEventListener('scroll',function(){
+                let scrollValue = document.documentElement.scrollTop;
+                console.log(scrollValue);
+                let position = 'center' + -(scrollValue/20) + 'px';
+                for(i = 0; i < conteClassObject.length ; i++){
+                    conteClassObject[i].style.backgroundPosition = position;
+                }
+            });
+        }
+    </script>
+
+<script src="js/hamburger.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.inview.min.js"></script>
+<script src="js/jquery.fadethis.min.js"></script>
+<script src="js/practice06.js"></script>
+
+    <script>
+        $(function(){
+            $(window).fadeThis({
+                speed:1000
+            });
+        });
+    </script>
+</body>
+
+</html>

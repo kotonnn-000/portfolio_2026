@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	min-width: 1010px;
+	margin: auto;
+}
+
+
+/*main*/
+
+
+/*main tittle*/
+
+.main_tittle h1 {
+	font-family: "Yu Mincho";
+	font-size: 36px;
+	color: #666666;
+	text-align: center;
+	margin-top: 90px;
+	font-weight: normal;
+}
+
+.main_tittle h2 {
+	font-family: "Yu Mincho";
+	font-size: 24px;
+	color: #666666;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 70px;
+	font-weight: normal;
+}
+
+
+/*map*/
+
+.map {
+	text-align: center;
+}
+
+
+/*acess detail*/
+
+.acess_detail {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	font-family: "Yu Mincho";
+	color: #666666;
+	text-align: center;
+}
+
+.acess_detail dl {
+	width: 500px;
+	margin: auto;
+}
+
+.acess_detail dt {
+	font-size: 24px;
+	text-align: left;
+	border-bottom: solid 1px;
+	padding-bottom: 5px;
+	margin-top: 30px;
+}
+
+.acess_detail dd {
+	font-size: 16px;
+	text-align: left;
+	margin-top: 10px;
+	line-height: 22px;
+	margin-left: 0.1em;
+}
+
+.acess_detail dd ul li {
+	list-style: disc;
+	margin-left: 1.4em;
+}

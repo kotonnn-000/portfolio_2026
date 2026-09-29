@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	min-width: 1010px;
+	margin: auto;
+	flex: 1;
+}
+
+
+
+/*main*/
+
+.menu_contents_title {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+.menu_contents_title h1 {
+	font-family: "Yu Mincho";
+	font-size: 36px;
+	color: #666666;
+	font-weight: normal;
+}
+
+.menu_contents_title h2 {
+	font-family: "Yu Mincho";
+	font-size: 24px;
+	color: #666666;
+	font-weight: normal;
+}
+
+
+
+/*contentsblock*/
+
+.contentsBlock {
+	text-align: center;
+	display: flex;
+	margin: auto;
+	margin-bottom: 80px;
+	height: 240px;
+	width: 890px;
+	justify-content: space-between;
+}
+
+.contentsBlock_reverse {
+	flex-direction: row-reverse;
+}
+
+.contentsBlock h3 {
+	font-family: "Yu Mincho";
+	font-size: 24px;
+	color: #666666;
+	border-bottom: solid 1px;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	text-align: left;
+	font-weight: normal;
+}
+
+
+.contentsBlock .menu_left {
+	font-family: "Yu Mincho";
+	font-size: 16px;
+	font-weight: normal;
+	color: #666666;
+	text-align: left;
+}
+
+.contentsBlock .menu_right {
+	font-family: "Yu Mincho";
+	font-size: 16px;
+	font-weight: normal;
+	color: #666666;
+	text-align: right;
+}
+
+.contentsBlock table {
+	width: 480px;
+	height: 170px;
+	line-height: 38px;
+}
+
+
+.contentsBlock_imagen img {
+	width: 360px;
+	height: 240px;
+}

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+	min-width: 1010px;
+	margin: auto;
+}
+
+
+
+/*main*/
+
+.aboutus_main_visual {
+	background-image: url("../img/about_main_visual.png");
+	background-size: cover;
+	background-position: center center;
+	height: 640px;
+	text-align: center;
+}
+
+.aboutus_main_visual h1 {
+	padding-top: 270px;
+}
+
+.aboutus_main_visual {
+	margin-bottom: 60px;
+}
+
+
+.aboutus_description p {
+	width: 640px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+.aboutus_description p:last-child {
+	margin-bottom: 60px;
+}
+
