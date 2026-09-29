@@ -1,0 +1,217 @@
+html {
+    font-size: calc((100vw / 360) * 10); // SPのデフォルト
+    @media screen and (min-width: 768px){
+        font-size: calc((100vw / 1440) * 10);
+    }
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 101;
+    height: 7.5rem;
+    @media screen and (min-width: 768px){
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+    &-txt{
+        padding-left: 0.5rem;
+        @media screen and (min-width: 768px){
+            padding-left: 9rem;
+        }
+        &__lnk{
+            text-decoration: none;
+            color: #5a4e4d;
+            @media screen and (min-width: 768px){
+                color: #fff;
+            }
+        }
+        &__head{
+            font-family: Georgia,Times,Times New Roman,serif;
+            font-size: 2rem;
+            line-height: 2.3rem;
+            @media screen and (min-width: 768px){
+                font-size: 4.4rem;
+                line-height: 5rem;
+            }
+        }
+        &__sub{
+            font-family: Georgia,Times,Times New Roman,serif;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            @media screen and (min-width: 768px){
+                font-size: 2.4rem;
+                line-height: 2.7rem;
+            }
+        }
+    }
+    &Menu{
+        @media screen and (min-width: 768px){
+            margin-right: 1.5rem;
+        }
+        &-nav{
+            display: none;
+            @media screen and (min-width: 768px){
+                display: block;
+            }
+            &__lnk{
+                font-family: "Inter", sans-serif;
+                font-size: 2.4rem;
+                line-height: 2.8rem;
+                letter-spacing: 3%;
+                text-decoration: none;
+                color: #5a4e4d;
+                &:hover{
+                    @media screen and (min-width: 768px){
+                        color: #8593AE;
+                    }
+                }
+            }
+        }
+        &-lst{
+            @media screen and (min-width: 768px){
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &--active{
+            display: block;
+        }
+    }
+}
+.headerMenu-nav__item + .headerMenu-nav__item{
+    @media screen and (min-width: 768px){
+        margin-left: 1rem;
+    }
+}
+.hamburger{
+    position: fixed;
+    top: 2rem;
+    left: 30.8rem;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background-color: transparent;
+    &-line{
+        display: block;
+        position: absolute;
+        right: 0;
+        height: 0.1rem;
+        background-color: #5a4e4d;
+        &1{
+            top: 0.9rem;
+            width: 3.8rem;
+        }
+        &2{
+            top: 2rem;
+            width: 2.8rem;
+        }
+        &3{
+            top: 3.1rem;
+            width: 1.8rem;
+        }
+    }
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+}
+.headerMenu-nav__close{
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+}
+
+.content-title{
+    padding-left: 0.5rem;
+    @media screen and (min-width: 768px){
+        padding: 3.1rem 0 0 10rem;
+    }
+    &__head{
+        display: flex;
+        font-family: Georgia,Times,Times New Roman,serif;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        color: #5a4e4d;
+        @media screen and (min-width: 768px){
+            font-size: 3.2rem;
+            line-height: 3.6rem;
+        }
+        &::after{
+            display: block;
+            width: 6rem;
+            height: 0.2rem;
+            margin: 1.5rem 0 0 0.3rem;
+            background-color: #dda288;
+            content: "";
+            @media screen and (min-width: 768px){
+                width: 10rem;
+                margin: 2.4rem 0 0 1rem;
+            }
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 7.5rem;
+    min-height: 7.5rem;
+    max-height: 12.5rem;
+    margin-top: 5.2rem;
+    background-color: #8593AE;
+}
+.copyright{
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #fff;
+    @media screen and (min-width: 768px){
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+}
+.totop-btn{
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: 2rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 3%;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    animation-name: bounce;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    @keyframes bounce {
+        0%   { transform: translate(0%, 0%); } /* 初期状態 */
+        40%  { transform: translate(0%, -20%); } /* 地面に着地し、その変動で潰れだす */
+        60%  { transform: translate(0%, -20%); } /* 潰れた反動で一瞬元に戻る */
+        100% { transform: translate(0%, 0%); } /* 初期状態に戻る */
+    }
+    @media screen and (min-width: 768px){
+        right: 10rem;
+        font-size: 2.6rem;
+    }
+    &::before{
+        display: block;
+        content: '';
+        margin: 0 auto;
+        width: 2rem;
+        height: 2rem;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: translateY(2px) rotate(315deg);
+        box-sizing: border-box;
+        @media screen and (min-width: 768px){
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+}
